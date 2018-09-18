@@ -2,11 +2,11 @@
 # Recent Posts widget.
 # This widget displays recent posts from `content/post/`.
 widget = "posts"
-active = false
-date = 2016-04-20T00:00:00
+active = true
+date = 2018-04-20T00:00:00
 
-title = "Recent Posts"
-subtitle = ""
+title = "Blog"
+subtitle = "Kürzlich veröffentlicht"
 
 # Order that this section will appear in.
 weight = 40
@@ -23,6 +23,6 @@ count = 5
 # List format.
 #   0 = Simple
 #   1 = Detailed
-list_format = 1
+list_format = 0
 +++
 
