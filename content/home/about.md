@@ -33,5 +33,11 @@ weight = 5
  
 +++
 
-# Biography
-Ich bin Crossmedia-Journalist in Ausbildung bei der Stuttgarter Zeitung und den Stuttgarter Nachrichten. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden (M.A.) studiert. Als Schreiber interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. In der Medienwelt beschäftige ich mich mit Datenjournalismus und den Schnittstellen von Journalismus und Sozialwissenschaft. Und in der Politikwissenschaft begeistern mich die Schnittstellen von Vergleichender Regierungslehre und Politischer Soziologie/Psychologie (und auf schräge Art und Weise das politische System Schottlands). 
+# Biographie
+Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden studiert.
+
+Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
+
+In der **Medienwelt** beschäftige ich mich mit Datenjournalismus und den Schnittstellen von Journalismus und Sozialwissenschaft. 
+
+Und in der **Politikwissenschaft** begeistern mich die Schnittstellen von Vergleichender Regierungslehre und Politischer Soziologie/Psychologie (und auf schräge Art und Weise das politische System Schottlands). 
