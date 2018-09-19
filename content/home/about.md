@@ -11,8 +11,8 @@ weight = 5
 [interests]
   interests = [
     "Datenjournalismus",
-    "Politik/Wirtschaft/Gesellschaft",
-    "Vergleichende Regierungslehre/Politische Soziologie"
+    "Politik, Wirtschaft & Gesellschaft",
+    "Vergleichende Regierungslehre & Politische Soziologie"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -34,7 +34,7 @@ weight = 5
 +++
 
 # Biographie
-Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden studiert.
+Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden studiert und dabei programmieren mit **R & R Studio** gelernt. **HTML/CSS** geht auch noch.
 
 Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
 
