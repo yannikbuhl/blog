@@ -38,6 +38,8 @@ Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und de
 
 Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
 
-In der **Medienwelt** beschäftige ich mich mit Datenjournalismus und den Schnittstellen von Journalismus und Sozialwissenschaft. 
+In der **Medienwelt** beschäftige ich mich mit Datenjournalismus und den Schnittstellen von Journalismus und Sozialwissenschaft (bspw. bei [ddjbw](www.ddjbw.de/). 
 
 Und in der **Politikwissenschaft** begeistern mich die Schnittstellen von Vergleichender Regierungslehre und Politischer Soziologie/Psychologie (und auf schräge Art und Weise das politische System Schottlands). 
+
+Zu guter Letzt engagiere ich mich bei [Correlaid](http://www.correlaid.org/) für Datenanalysen zum guten Zweck.
