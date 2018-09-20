@@ -2,7 +2,7 @@
 title = "Impressum/Datenschutz"
 
 date = 2018-09-18T00:00:00
-draft = true
+draft = false
 
 # [header]
 # image = ""
