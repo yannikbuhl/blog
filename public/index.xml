@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y. Buhl on Y. Buhl</title>
-    <link>/</link>
+    <link>https://yannikbuhl.netlify.com/</link>
     <description>Recent content in Y. Buhl on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Diese Homepage</title>
-      <link>/post/diese-homepage/</link>
+      <link>https://yannikbuhl.netlify.com/post/diese-homepage/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/diese-homepage/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/diese-homepage/</guid>
       <description>&lt;p&gt;Text&lt;/p&gt;
 &lt;div id=&#34;ich-geh-jetzt-kaffee-kochen.&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Ich geh’ jetzt Kaffee kochen.&lt;/h2&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Zweiter Blogpost</title>
-      <link>/post/getting-started/</link>
+      <link>https://yannikbuhl.netlify.com/post/getting-started/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/post/getting-started/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/getting-started/</guid>
       <description>
 
 &lt;p&gt;Diese Seite ist gemacht mit &lt;strong&gt;Hugo und R Studio&lt;/strong&gt;. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Dies ist ein Link&lt;/a&gt; hier.&lt;/p&gt;
@@ -74,75 +74,11 @@
     </item>
     
     <item>
-      <title>Impressum/Datenschutz</title>
-      <link>/privacy/</link>
-      <pubDate>Tue, 18 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/privacy/</guid>
-      <description>
-
-&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;br /&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
-
-&lt;p&gt;Yannik Buhl &lt;br /&gt;
-Welfenstraße 50 &lt;br /&gt;
-70599 Stuttgart&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34; target=&#34;_blank&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;datenschutz-dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
-
-&lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;twitter&#34;&gt;Twitter&lt;/h2&gt;
-
-&lt;p&gt;Auf den Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter &lt;a href=&#34;https://twitter.com/privacy&#34; target=&#34;_blank&#34;&gt;https://twitter.com/privacy&lt;/a&gt;. Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: &lt;a href=&#34;https://twitter.com/account/settings&#34; target=&#34;_blank&#34;&gt;https://twitter.com/account/settings&lt;/a&gt; ändern.&lt;/p&gt;
-
-&lt;h2 id=&#34;youtube&#34;&gt;YouTube&lt;/h2&gt;
-
-&lt;p&gt;Die Webseite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine der mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: &lt;a href=&#34;https://www.google.de/intl/de/policies/privacy&#34; target=&#34;_blank&#34;&gt;https://www.google.de/intl/de/policies/privacy&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ssl-verschlüsselung&#34;&gt;SSL-Verschlüsselung&lt;/h2&gt;
-
-&lt;p&gt;Diese Seite nutzt zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.&lt;/p&gt;
-
-&lt;h2 id=&#34;recht-auf-auskunft-löschung-sperrung&#34;&gt;Recht auf Auskunft, Löschung, Sperrung&lt;/h2&gt;
-
-&lt;p&gt;Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse melden.&lt;/p&gt;
-
-&lt;h1 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h1&gt;
-
-&lt;h2 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;
-
-&lt;p&gt;Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;
-
-&lt;h2 id=&#34;haftung-für-links&#34;&gt;Haftung für Links&lt;/h2&gt;
-
-&lt;p&gt;Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.&lt;/p&gt;
-
-&lt;h2 id=&#34;urheberrecht&#34;&gt;Urheberrecht&lt;/h2&gt;
-
-&lt;p&gt;Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.&lt;/p&gt;
-
-&lt;h2 id=&#34;datenschutz&#34;&gt;Datenschutz&lt;/h2&gt;
-
-&lt;p&gt;Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.&lt;/p&gt;
-
-&lt;h2 id=&#34;google-analytics-inaktiv-bis-15-oktober-2018&#34;&gt;Google Analytics (inaktiv bis 15. Oktober 2018)&lt;/h2&gt;
-
-&lt;p&gt;Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&amp;ldquo;Google&amp;rdquo;). Google Analytics verwendet sog. &amp;ldquo;Cookies&amp;rdquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.&lt;/p&gt;
-
-&lt;p&gt;Impressum vom &lt;a href=&#34;https://www.impressum-generator.de&#34; target=&#34;_blank&#34;&gt;Impressum Generator&lt;/a&gt; der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Example Page</title>
-      <link>/tutorial/example/</link>
+      <link>https://yannikbuhl.netlify.com/tutorial/example/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tutorial/example/</guid>
+      <guid>https://yannikbuhl.netlify.com/tutorial/example/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -159,10 +95,10 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
+      <link>https://yannikbuhl.netlify.com/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/talk/example-talk/</guid>
+      <guid>https://yannikbuhl.netlify.com/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
 
@@ -183,10 +119,10 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
     
     <item>
       <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
+      <link>https://yannikbuhl.netlify.com/project/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/project/deep-learning/</guid>
+      <guid>https://yannikbuhl.netlify.com/project/deep-learning/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -201,39 +137,39 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
     
     <item>
       <title>External Project</title>
-      <link>/project/example-external-project/</link>
+      <link>https://yannikbuhl.netlify.com/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/project/example-external-project/</guid>
+      <guid>https://yannikbuhl.netlify.com/project/example-external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
+      <link>https://yannikbuhl.netlify.com/publication/person-re-identification/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
+      <guid>https://yannikbuhl.netlify.com/publication/person-re-identification/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
+      <link>https://yannikbuhl.netlify.com/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
+      <guid>https://yannikbuhl.netlify.com/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/example-slides/</link>
+      <link>https://yannikbuhl.netlify.com/slides/example-slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/example-slides/</guid>
+      <guid>https://yannikbuhl.netlify.com/slides/example-slides/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;

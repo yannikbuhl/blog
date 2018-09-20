@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Y. Buhl</title>
-    <link>/tags/</link>
+    <link>https://yannikbuhl.netlify.com/tags/</link>
     <description>Recent content in Tags on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yannikbuhl.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
+      <link>https://yannikbuhl.netlify.com/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/tags/deep-learning/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/tags/demo/</link>
+      <link>https://yannikbuhl.netlify.com/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/tags/demo/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Journalismus</title>
-      <link>/tags/journalismus/</link>
+      <link>https://yannikbuhl.netlify.com/tags/journalismus/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tags/journalismus/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/journalismus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://yannikbuhl.netlify.com/tags/r/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/r/</guid>
       <description></description>
     </item>
     
