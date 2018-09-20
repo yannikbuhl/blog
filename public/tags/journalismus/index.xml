@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 19 Sep 2018 21:06:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/tags/journalismus/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Erster Blogpost</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Wed, 19 Sep 2018 21:06:00 +0000</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>ÜberschriftLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
-    </item>
     
     <item>
       <title>Zweiter Blogpost</title>

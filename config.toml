@@ -286,9 +286,14 @@ enableGitInfo = false
   weight = 3
 
 [[menu.main]]
-  name = "Kontakt/Impressum"
+  name = "Kontakt"
   url = "#kontakt"
   weight = 4
+  
+[[menu.main]]
+  name = "Lateinamerika"
+  url = "https://descubriendoecuador.wordpress.com/"
+  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

@@ -4,8 +4,8 @@
     
     <url>
     
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
+      <loc>/post/diese-homepage/</loc>
+      <lastmod>2018-09-20T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -126,17 +126,7 @@
     
     <url>
     
-      <loc>/categories/allgemein/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/categories/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -163,25 +153,7 @@
     <url>
     
       <loc>/tags/journalismus/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/markdown/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2018-09-19T21:06:00+00:00</lastmod>
+      <lastmod>2018-09-18T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -200,6 +172,24 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2013-07-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2018-09-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
