@@ -34,7 +34,7 @@ weight = 5
 +++
 
 # Biographie
-Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und anfangs auch **Stata**) gelernt. Mit **HTML/CSS** kenne ich mich ebenfalls aus.
+Ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis 2017 habe ich an der Universität Mannheim Politikwissenschaft mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und anfangs auch **Stata**) gelernt. Mit **HTML/CSS** & **Git/GitHub** kenne ich mich ebenfalls aus.
 
 Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
 
