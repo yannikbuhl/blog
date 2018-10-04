@@ -36,7 +36,7 @@ weight = 5
 # Biographie
 **Achtung:** *Diese Seite ist im Bau (mit dem großartigen R-Package* [`blogdown`](https://bookdown.org/yihui/blogdown/)).
 
-Mein Name ist Yannik Buhl, bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis August 2017 habe ich an der Universität Mannheim *M.A. Political Science* mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und auch **Stata**) gelernt. Mit **HTML/CSS** & **Git/GitHub** kenne ich mich ebenfalls aus.
+Mein Name ist Yannik Buhl, ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis August 2017 habe ich an der Universität Mannheim *M.A. Political Science* mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und auch **Stata**) gelernt. Mit **HTML/CSS** & **Git/GitHub** kenne ich mich ebenfalls aus.
 
 Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
 
