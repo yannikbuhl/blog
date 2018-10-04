@@ -13,14 +13,21 @@
     
     
     <item>
-      <title>Fotografie</title>
-      <link>/tutorial/example/</link>
+      <title>Ecuador</title>
+      <link>/tutorial/ecuador/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/tutorial/ecuador/</guid>
+      <description>Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach Quito, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen Friedrich-Ebert-Stiftung zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die Galápagos-Inseln besucht und die Nebelwälder am Rande des Amazonas. Außerdem habe ich Ausflüge nach Machu Picchu, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist.</description>
+    </item>
+    
+    <item>
+      <title>Schwarzwald</title>
+      <link>/tutorial/schwarzwald/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tutorial/example/</guid>
-      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
-Tip 1 &amp;hellip;
-Tip 2 &amp;hellip;</description>
+      <guid>/tutorial/schwarzwald/</guid>
+      <description>Im Herbst 2017 bin ich mit einem Freund von mir in den Schwarzwald gefahren. Unser Ziel war es, so viel wie möglich von der wunderbaren Landschaft dieses Fleckchen Erdes in Baden-Württemberg zu fotografieren. Unsere Route führte uns am Ende in etwas weniger als einer Woche vom Nordschwarzwald (Hornisgrinde) bis in den Süden (Feldberg/Titisee). Auf dem Weg haben wir vor allem viele Wasserfälle besucht und mit unseren Neutraldichtefiltern experimentiert. Die Zahl an Wasserfällen war schier endlos: Triberger Wasserfälle, Zweribachwasserfälle, Burgbachwasserfall, Wasserfälle Allerheiligen&amp;hellip; Die folgenden Bilder sind alle auf dieser Reise entstanden.</description>
     </item>
     
   </channel>

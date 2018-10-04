@@ -291,7 +291,7 @@ enableGitInfo = false
   weight = 4
   
 [[menu.main]]
-  name = "Lateinamerika"
+  name = "Lateinamerika-Blog"
   url = "https://descubriendoecuador.wordpress.com/"
   weight = 5
 

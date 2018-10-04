@@ -17,6 +17,9 @@ Welfenstraße 50 <br />
 
 [Kontakt](mailto:buhl-netlify@posteo.de)
 
+# Externe Bilder & Logos
+Icons made by [Freepik](http://www.freepik.com) from [Flaticon](https://www.flaticon.com/) are licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
+
 # Datenschutz / DSGVO
 Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei [Netlify](www.netlify.com). Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es [hier](https://www.netlify.com/gdpr/).
 

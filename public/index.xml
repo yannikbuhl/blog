@@ -89,6 +89,10 @@ Welfenstraße 50 &lt;br /&gt;
 
 &lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34; target=&#34;_blank&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
 
+&lt;h1 id=&#34;externe-bilder-logos&#34;&gt;Externe Bilder &amp;amp; Logos&lt;/h1&gt;
+
+&lt;p&gt;Icons made by &lt;a href=&#34;http://www.freepik.com&#34; target=&#34;_blank&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;https://www.flaticon.com/&#34; target=&#34;_blank&#34;&gt;Flaticon&lt;/a&gt; are licensed by &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34; target=&#34;_blank&#34;&gt;CC 3.0 BY&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h1 id=&#34;datenschutz-dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
 
 &lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
@@ -138,22 +142,122 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
     </item>
     
     <item>
-      <title>Fotografie</title>
-      <link>/tutorial/example/</link>
+      <title>Ecuador</title>
+      <link>/tutorial/ecuador/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/tutorial/ecuador/</guid>
+      <description>&lt;p&gt;Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach Quito, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen &lt;a href=&#34;www-fes-ildis.ec/&#34; target=&#34;_blank&#34;&gt;Friedrich-Ebert-Stiftung&lt;/a&gt; zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die Galápagos-Inseln besucht und die Nebelwälder am Rande des Amazonas. Außerdem habe ich Ausflüge nach Machu Picchu, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist. Die folgenden Bilder sind eine Auswahl derer, die dort (dortmals noch mit meiner Canon 500D) entstanden sind.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw1.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw1.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw2.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw2.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw3.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw3.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schwarzwald</title>
+      <link>/tutorial/schwarzwald/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tutorial/example/</guid>
-      <description>
+      <guid>/tutorial/schwarzwald/</guid>
+      <description>&lt;p&gt;Im Herbst 2017 bin ich mit einem &lt;a href=&#34;https://www.instagram.com/chris_de_berghie/&#34; target=&#34;_blank&#34;&gt;Freund&lt;/a&gt; von mir in den Schwarzwald gefahren. Unser Ziel war es, so viel wie möglich von der wunderbaren Landschaft dieses Fleckchen Erdes in Baden-Württemberg zu fotografieren. Unsere Route führte uns am Ende in etwas weniger als einer Woche vom Nordschwarzwald (Hornisgrinde) bis in den Süden (Feldberg/Titisee). Auf dem Weg haben wir vor allem viele Wasserfälle besucht und mit unseren Neutraldichtefiltern experimentiert. Die Zahl an Wasserfällen war schier endlos: Triberger Wasserfälle, Zweribachwasserfälle, Burgbachwasserfall, Wasserfälle Allerheiligen&amp;hellip; Die folgenden Bilder sind alle auf dieser Reise entstanden.&lt;/p&gt;
 
-&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 
-&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw1.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw1.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw2.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw2.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw3.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw3.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw4.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw4.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw5.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;/img/sw5.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
 </description>
     </item>
     

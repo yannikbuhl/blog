@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contents on Y. Buhl</title>
+    <link>/content/</link>
+    <description>Recent content in Contents on Y. Buhl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/content/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ecuador</title>
+      <link>/content/tutorial/ecuador/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/content/tutorial/ecuador/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

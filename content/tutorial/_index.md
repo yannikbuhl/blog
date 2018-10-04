@@ -19,21 +19,7 @@ type = "docs"  # Do not modify.
  image = "headers/bird.jpg"
  caption = "Bildrechte: Y. Buhl"
  
- 
-[[gallery_item]]
-album = "1"
-image = "sw1.jpg"
-caption = "Schwarzwald"
-
-[[gallery_item]]
-album = "1"
-image = "sw2.jpg"
-caption = "Schwarzwald"
- 
 +++
 
-Hier finden Sie eine Auswahl meiner Fotografien, geschossen auf verschiedenen Reisen. Ich nutze für meine Fotos eine *Canon 70D*
+Auf den Unterseiten zu dieser Seite finden Sie eine Auswahl meiner Fotografien, geschossen auf verschiedenen Reisen in den vergangenen Jahren. Eine besondere Vorliebe hege ich für Landschafts- bzw. Outdoor-Fotografie. Seit Jahren bin ich leidenschaftlicher *Canon*-Fan und nutze für meine Fotos eine *Canon 70D*. Am häufigsten hängt daran mein liebstes Weitwinkelobjektiv (*Sigma 10-20 mm f/4-5.6*) inklusive Pol- bzw. Neutraldichtefilter. Das ganze steht dann in der Regel auf einem Carbon-Stativ mit Kugelkopf von Rollei.
 
-Hier kommt die Bildergalerie
-
-{{< gallery >}}
