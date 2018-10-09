@@ -11,65 +11,29 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Diese Homepage</title>
-      <link>/post/diese-homepage/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Voting Behaviour in Scottish Independence Referendum</title>
+      <link>/post/voting-behaviour-in-scottish-independence-referendum/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/diese-homepage/</guid>
-      <description>&lt;p&gt;Text&lt;/p&gt;
-&lt;div id=&#34;ich-geh-jetzt-kaffee-kochen.&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Ich geh’ jetzt Kaffee kochen.&lt;/h2&gt;
-&lt;/div&gt;
+      <guid>/post/voting-behaviour-in-scottish-independence-referendum/</guid>
+      <description>&lt;p&gt;An dieser Stelle veröffentliche ich eine gekürzte Version meine Masterarbeit, abgegeben am XX. Juli 2017. Darin habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag dabei auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Thema ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Weitere Infos folgen&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Zweiter Blogpost</title>
-      <link>/post/getting-started/</link>
+      <link>/post/ueber-dieses-blog/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/post/getting-started/</guid>
+      <guid>/post/ueber-dieses-blog/</guid>
       <description>
 
-&lt;p&gt;Diese Seite ist gemacht mit &lt;strong&gt;Hugo und R Studio&lt;/strong&gt;. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Dies ist ein Link&lt;/a&gt; hier.&lt;/p&gt;
-
-&lt;p&gt;Hier kann man ein Bild einfügen:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;bildergalerie&#34;&gt;Bildergalerie&lt;/h2&gt;
-
-&lt;p&gt;Hier kommt die Bildergalerie&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
+&lt;p&gt;Warum dieses Blog?&lt;/p&gt;
 
 &lt;h2 id=&#34;neuer-absatz&#34;&gt;Neuer Absatz&lt;/h2&gt;
 
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
-
-&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

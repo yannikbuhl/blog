@@ -14,15 +14,12 @@
     
     <item>
       <title>Zweiter Blogpost</title>
-      <link>/post/getting-started/</link>
+      <link>/post/ueber-dieses-blog/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/post/getting-started/</guid>
-      <description>Diese Seite ist gemacht mit Hugo und R Studio. Dies ist ein Link hier.
-Hier kann man ein Bild einfügen:
-
-Bildergalerie Hier kommt die Bildergalerie
-   Neuer Absatz THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</description>
+      <guid>/post/ueber-dieses-blog/</guid>
+      <description>Warum dieses Blog?
+Neuer Absatz</description>
     </item>
     
   </channel>

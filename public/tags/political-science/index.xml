@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Y. Buhl</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Y. Buhl</description>
+    <title>Political science on Y. Buhl</title>
+    <link>/tags/political-science/</link>
+    <description>Recent content in Political science on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 09 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/political-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>/post/voting-behaviour-in-scottish-independence-referendum/</guid>
       <description>An dieser Stelle veröffentliche ich eine gekürzte Version meine Masterarbeit, abgegeben am XX. Juli 2017. Darin habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag dabei auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Thema ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen.</description>
-    </item>
-    
-    <item>
-      <title>Zweiter Blogpost</title>
-      <link>/post/ueber-dieses-blog/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/post/ueber-dieses-blog/</guid>
-      <description>Warum dieses Blog?
-Neuer Absatz</description>
     </item>
     
   </channel>
