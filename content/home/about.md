@@ -12,6 +12,7 @@ weight = 5
   interests = [
     "Datenjournalismus",
     "Politik, Wirtschaft & Gesellschaft",
+    "[R/RStudio](https://www.rstudio.com/) & quantitative Methoden",
     "Vergleichende Regierungslehre & Politische Soziologie"
   ]
 
