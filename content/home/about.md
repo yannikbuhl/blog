@@ -35,9 +35,9 @@ weight = 5
 +++
 
 # Biographie
-**Achtung:** *Diese Seite ist im Bau (mit dem großartigen R-Package* [`blogdown`](https://bookdown.org/yihui/blogdown/)).
+**Achtung:** *Diese Seite ist noch im Bau (mit dem R-Package* [`blogdown`](https://bookdown.org/yihui/blogdown/)*).*
 
-Mein Name ist Yannik Buhl, ich bin Crossmedia-Journalist in Ausbildung bei der *Stuttgarter Zeitung* und den *Stuttgarter Nachrichten*. Bis August 2017 habe ich an der Universität Mannheim *M.A. Political Science* mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und auch **Stata**) gelernt. Mit **HTML/CSS** & **Git/GitHub** kenne ich mich ebenfalls aus.
+Mein Name ist Yannik Buhl, ich bin Crossmedia-Journalist in Ausbildung bei der **Stuttgarter Zeitung** und den **Stuttgarter Nachrichten**. Bis August 2017 habe ich an der Universität Mannheim **M.A. Political Science** mit Schwerpunkt quantitative Methoden studiert und dabei Programmieren mit **R & R Studio** (und auch **Stata**) gelernt. Mit **HTML/CSS** & **Git/GitHub** kenne ich mich ebenfalls aus.
 
 Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. 
 
@@ -46,3 +46,5 @@ In der **Medienwelt** beschäftige ich mich mit Datenjournalismus und den Schnit
 Und in der **Politikwissenschaft** begeistern mich die Schnittstellen von Vergleichender Regierungslehre und Politischer Soziologie/Psychologie (und auf schräge Art und Weise das politische System Schottlands). 
 
 Zu guter Letzt engagiere ich mich bei der großartigen Non-Profit-Initiative [Correlaid](http://www.correlaid.org/) für Datenanalysen zum guten Zweck. Derzeit entwickeln wir dort als Lehrprojekt etwa ein **R**-Package für eine [*API*](https://newsapi.org).
+
+Mein größtes **Hobby** ist die **Fotografie**. Eine Auswahl an Fotos findet sich im Reiter [Fotografie](tutorial/) oder auf meinem [Instagram-Account](https://www.instagram.com/yabuhl/).

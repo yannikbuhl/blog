@@ -17,28 +17,43 @@ linktitle = "Ecuador"
 # Featured image.
 # Uncomment below lines to use.
  [header]
- image = "headers/bird.jpg"
+ image = "headers/quito.jpg"
  caption = "Bildrechte: Y. Buhl"
 
 [[gallery_item]]
 album = "1"
-image = "sw1.jpg"
-caption = "Schwarzwald"
+image = "gala1.jpg"
+caption = "Auf dem Weg nach Santa Cruz"
 
 [[gallery_item]]
 album = "1"
-image = "sw2.jpg"
-caption = "Schwarzwald"
+image = "gala2.jpg"
+caption = "Die Lava-Felder der Isla Isabela"
 
 [[gallery_item]]
 album = "1"
-image = "sw3.jpg"
-caption = "Schwarzwald"
+image = "gala3.jpg"
+caption = "Blaufußtölpel vor der Küste von Isla Isabela"
+
+[[gallery_item]]
+album = "1"
+image = "ec1.jpg"
+caption = "Blick vom Panecillo auf Quito"
+
+[[gallery_item]]
+album = "1"
+image = "ec2.jpg"
+caption = "In den Nebelwäldern"
+
+[[gallery_item]]
+album = "1"
+image = "ec3.jpg"
+caption = "Molinuco nahe Quito"
 
 
 +++
 
-Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach Quito, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen [Friedrich-Ebert-Stiftung](www-fes-ildis.ec/) zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die Galápagos-Inseln besucht und die Nebelwälder am Rande des Amazonas. Außerdem habe ich Ausflüge nach Machu Picchu, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist. Die folgenden Bilder sind eine Auswahl derer, die dort (dortmals noch mit meiner Canon 500D) entstanden sind. 
+Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach *Quito*, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen [Friedrich-Ebert-Stiftung](www-fes-ildis.ec/) zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die *Galápagos*-Inseln besucht und die *Nebelwälder* am Rande des Amazonas. Außerdem habe ich Ausflüge nach *Machu Picchu*, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist. Die folgenden Bilder sind eine Auswahl derer, die dort (dortmals noch mit meiner Canon 500D) entstanden sind. 
 
 {{< gallery >}}
 
