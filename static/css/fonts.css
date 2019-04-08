@@ -1,11 +1,11 @@
 html {
-  font-family: Palatino Linotype;
+  font-family: Palatino, "Palatino Linotype", Georgia, serif;
 }
 
 .navbar-light {
-  font-family: Palatino Linotype, sans-serif;
+  font-family: Palatino, "Palatino Linotype", Georgia, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Palatino Linotype, sans-serif;
+  font-family: Palatino, "Palatino Linotype", Georgia, serif;
 }
