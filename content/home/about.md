@@ -41,7 +41,7 @@ Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesells
 
 Zu guter Letzt engagiere ich mich bei der Non-Profit-Initiative [Correlaid](http://www.correlaid.org/) für Datenanalysen zum guten Zweck. Im März 2019 haben wir dort unser erstes Open-Source-Package für R veröffentlicht, das ich mitentwickelt habe: [*{newsanchor}*](https://github.com/CorrelAid/newsanchor).
 
-Mein größtes **Hobby** ist die **Fotografie**. Eine Auswahl an Fotos findet sich im Reiter [Fotografie](tutorial/) oder auf meinem [Instagram-Account](https://www.instagram.com/yabuhl/).
+Mein größtes **Hobby** ist die **Fotografie**. Eine Auswahl an Fotos findet sich auf meinem [Instagram-Account](https://www.instagram.com/yabuhl/).
 
 ## Software & Programmieren
 - *R/R Studio*: +++
