@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y. Buhl on Y. Buhl</title>
@@ -7,18 +6,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Voting Behaviour in Scottish Independence Referendum</title>
       <link>/post/voting-behaviour-in-scottish-independence-referendum/</link>
-      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/voting-behaviour-in-scottish-independence-referendum/</guid>
-      <description>&lt;p&gt;An dieser Stelle veröffentliche ich eine gekürzte Version meine Masterarbeit, abgegeben am XX. Juli 2017. Darin habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Einflussfaktor großteils ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen.&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;In meiner Masterarbeit, abgegeben im Juli 2017, habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Einflussfaktor großteils ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Zusammengefasst sehen die Ergebnisse folgendermaßen aus (ceteris paribus): Schotten, die die EU-Mitgliedschaft positiv sahen und glaubten, dass ein unabhängiges Schottland nicht in der EU bleiben kann, stimmten mit großer Wahrscheinlichkeit nicht für die Unabhängigkeit. Wenn sie aber glaubten, dass das Land in der EU bleiben kann, stimmten sie mit großer Wahrscheinlichkeit für die Unabhängigkeit.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Weitere Infos folgen demnächst.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Laden Sie &lt;a href=&#34;Thesis_Yannik_Buhl.pdf&#34;&gt;hier&lt;/a&gt; das PDF zur Arbeit herunter.&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -266,10 +268,10 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
       
       <guid>/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
+  
+Click on the **Slides** button above to view the built-in slides feature.
 
 &lt;/div&gt;
-
 
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 
@@ -408,13 +410,13 @@ $$&lt;/p&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-  One
+   One
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-  Three
+   Three
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -445,7 +447,6 @@ $$&lt;/p&gt;
 &lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
 &lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;/aside&gt;
 
 &lt;hr /&gt;

@@ -164,7 +164,7 @@ enableGitInfo = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
+  custom_css = ["fonts.css"]
   custom_js  = []
 
   # Publication types.
@@ -268,12 +268,12 @@ enableGitInfo = false
 [[menu.main]]
   name = "Arbeitsproben"
   url = "https://www.torial.com/yannik.buhl"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = "Blog"
   url = "/post/"
-  weight = 4
+  weight = 2
 
 #[[menu.main]]
 #  name = "Projekte"
@@ -282,7 +282,8 @@ enableGitInfo = false
 
 [[menu.main]]
   name = "Fotografie"
-  url = "/tutorial/"
+  url = "https://www.instagram.com/yabuhl/"
+  # url = "/tutorial/"
   weight = 3
 
 #[[menu.main]]
@@ -290,10 +291,10 @@ enableGitInfo = false
 #  url = "#kontakt"
 #  weight = 4
   
-[[menu.main]]
-  name = "Lateinamerika-Blog"
-  url = "https://descubriendoecuador.wordpress.com/"
-  weight = 5
+#[[menu.main]]
+#  name = "Lateinamerika-Blog"
+#  url = "https://descubriendoecuador.wordpress.com/"
+#  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

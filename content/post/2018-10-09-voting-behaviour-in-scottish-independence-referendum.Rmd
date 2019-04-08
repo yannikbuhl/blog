@@ -1,7 +1,7 @@
 ---
 title: Voting Behaviour in Scottish Independence Referendum
 author: Yannik
-date: '2018-10-09'
+date: '2019-01-09'
 slug: voting-behaviour-in-scottish-independence-referendum
 categories: [political science]
 tags: [political science]
@@ -10,8 +10,8 @@ header:
   image: ''
 ---
 
-An dieser Stelle veröffentliche ich eine gekürzte Version meine Masterarbeit, abgegeben am XX. Juli 2017. Darin habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Einflussfaktor großteils ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen. 
+In meiner Masterarbeit, abgegeben im Juli 2017, habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Einflussfaktor großteils ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen. 
 
 *Zusammengefasst sehen die Ergebnisse folgendermaßen aus (ceteris paribus): Schotten, die die EU-Mitgliedschaft positiv sahen und glaubten, dass ein unabhängiges Schottland nicht in der EU bleiben kann, stimmten mit großer Wahrscheinlichkeit nicht für die Unabhängigkeit. Wenn sie aber glaubten, dass das Land in der EU bleiben kann, stimmten sie mit großer Wahrscheinlichkeit für die Unabhängigkeit.*
 
-**Weitere Infos folgen demnächst.**
+**Laden Sie [hier](Thesis_Yannik_Buhl.pdf) das PDF zur Arbeit herunter.**
