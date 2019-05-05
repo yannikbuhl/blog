@@ -27,22 +27,6 @@
     </item>
     
     <item>
-      <title>Zweiter Blogpost</title>
-      <link>/post/ueber-dieses-blog/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/post/ueber-dieses-blog/</guid>
-      <description>
-
-&lt;p&gt;Warum dieses Blog?&lt;/p&gt;
-
-&lt;h2 id=&#34;neuer-absatz&#34;&gt;Neuer Absatz&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Impressum/Datenschutz</title>
       <link>/privacy/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0200</pubDate>
