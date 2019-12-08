@@ -1,503 +1,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y. Buhl on Y. Buhl</title>
-    <link>/</link>
+    <link>https://yannikbuhl.netlify.com/</link>
     <description>Recent content in Y. Buhl on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Voting Behaviour in the 2014 Scottish Independence Referendum</title>
-      <link>/post/voting-behaviour-in-2014-scottish-independence-referendum/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/voting-behaviour-in-2014-scottish-independence-referendum/</guid>
-      <description>
-
-
-&lt;p&gt;In meiner Masterarbeit, abgegeben im Juli 2017, habe ich mich intensiv mit dem Wahlverhalten der Schotten im Unabhängigkeitsreferendum von 2014 beschäftigt. Genauer gesagt habe ich versucht, als erster das Wahlverhalten mit einer multivariat-quantitativen Herangehensweise systematisch zu erklären. Mein Fokus lag auf den Einstellungen der Schotten zur Europäischen Union und wie ihr Wahlverhalten dadurch beeinflusst wurde. Während die Literatur zum Thema die EU als Einflussfaktor großteils ignoriert hat, legen meine Ergebnisse nahe, dass die Schotten die Zukunft ihres Landes in der EU (oder außerhalb) sehr wohl in Betracht zogen, als sie in die Wahlkabine gingen.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Zusammengefasst sehen die Ergebnisse folgendermaßen aus (ceteris paribus): Schotten, die die EU-Mitgliedschaft positiv sahen und glaubten, dass ein unabhängiges Schottland nicht in der EU bleiben kann, stimmten mit großer Wahrscheinlichkeit nicht für die Unabhängigkeit. Wenn sie aber glaubten, dass das Land in der EU bleiben kann, stimmten sie mit großer Wahrscheinlichkeit für die Unabhängigkeit. Die Effekte, auf Basis der logistischen Regressionen, werden als Graphen mit vorhergesagten Wahrscheinlichkeiten klarer:&lt;/em&gt;
-&lt;img src=&#34;/img/finalplot_.jpg&#34; alt=&#34;Predicted Probabilities I: Wie eine EU-Mitgliedschaft das Wahlverhalten beeinflusst.&#34; /&gt;
-&lt;img src=&#34;/img/finalplot2_.jpg&#34; alt=&#34;Predicted Probabilities II: Die Unterschiede zwischen EU-Befürwortern und EU-Gegnern.&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Laden Sie &lt;a href=&#34;Thesis_Yannik_Buhl.pdf&#34;&gt;hier&lt;/a&gt; das PDF zur Arbeit herunter.&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Impressum/Datenschutz</title>
-      <link>/privacy/</link>
+      <link>https://yannikbuhl.netlify.com/privacy/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/privacy/</guid>
-      <description>
-
-&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;br /&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
-
-&lt;p&gt;Yannik Buhl &lt;br /&gt;
-Welfenstraße 50 &lt;br /&gt;
+      <guid>https://yannikbuhl.netlify.com/privacy/</guid>
+      <description>&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;!-- raw HTML omitted --&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
+&lt;p&gt;Yannik Buhl &lt;!-- raw HTML omitted --&gt;
+Welfenstraße 50 &lt;!-- raw HTML omitted --&gt;
 70599 Stuttgart&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34; target=&#34;_blank&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;externe-bilder-logos&#34;&gt;Externe Bilder &amp;amp; Logos&lt;/h1&gt;
-
-&lt;p&gt;Icons made by &lt;a href=&#34;http://www.freepik.com&#34; target=&#34;_blank&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;https://www.flaticon.com/&#34; target=&#34;_blank&#34;&gt;Flaticon&lt;/a&gt; are licensed by &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34; target=&#34;_blank&#34;&gt;CC 3.0 BY&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;datenschutz-dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
-
-&lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;externe-bilder--logos&#34;&gt;Externe Bilder &amp;amp; Logos&lt;/h1&gt;
+&lt;p&gt;Icons made by &lt;a href=&#34;http://www.freepik.com&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;https://www.flaticon.com/&#34;&gt;Flaticon&lt;/a&gt; are licensed by &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34;&gt;CC 3.0 BY&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;datenschutz--dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
+&lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;twitter&#34;&gt;Twitter&lt;/h2&gt;
-
-&lt;p&gt;Auf den Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter &lt;a href=&#34;https://twitter.com/privacy&#34; target=&#34;_blank&#34;&gt;https://twitter.com/privacy&lt;/a&gt;. Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: &lt;a href=&#34;https://twitter.com/account/settings&#34; target=&#34;_blank&#34;&gt;https://twitter.com/account/settings&lt;/a&gt; ändern.&lt;/p&gt;
-
+&lt;p&gt;Auf den Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter &lt;a href=&#34;https://twitter.com/privacy&#34;&gt;https://twitter.com/privacy&lt;/a&gt;. Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: &lt;a href=&#34;https://twitter.com/account/settings&#34;&gt;https://twitter.com/account/settings&lt;/a&gt; ändern.&lt;/p&gt;
 &lt;h2 id=&#34;youtube&#34;&gt;YouTube&lt;/h2&gt;
-
-&lt;p&gt;Die Webseite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine der mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: &lt;a href=&#34;https://www.google.de/intl/de/policies/privacy&#34; target=&#34;_blank&#34;&gt;https://www.google.de/intl/de/policies/privacy&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ssl-verschlüsselung&#34;&gt;SSL-Verschlüsselung&lt;/h2&gt;
-
+&lt;p&gt;Die Webseite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine der mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: &lt;a href=&#34;https://www.google.de/intl/de/policies/privacy&#34;&gt;https://www.google.de/intl/de/policies/privacy&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sslverschlsselung&#34;&gt;SSL-Verschlüsselung&lt;/h2&gt;
 &lt;p&gt;Diese Seite nutzt zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.&lt;/p&gt;
-
-&lt;h2 id=&#34;recht-auf-auskunft-löschung-sperrung&#34;&gt;Recht auf Auskunft, Löschung, Sperrung&lt;/h2&gt;
-
+&lt;h2 id=&#34;recht-auf-auskunft-lschung-sperrung&#34;&gt;Recht auf Auskunft, Löschung, Sperrung&lt;/h2&gt;
 &lt;p&gt;Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse melden.&lt;/p&gt;
-
 &lt;h1 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h1&gt;
-
-&lt;h2 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;
-
+&lt;h2 id=&#34;haftung-fr-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;
 &lt;p&gt;Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;
-
-&lt;h2 id=&#34;haftung-für-links&#34;&gt;Haftung für Links&lt;/h2&gt;
-
+&lt;h2 id=&#34;haftung-fr-links&#34;&gt;Haftung für Links&lt;/h2&gt;
 &lt;p&gt;Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.&lt;/p&gt;
-
 &lt;h2 id=&#34;urheberrecht&#34;&gt;Urheberrecht&lt;/h2&gt;
-
 &lt;p&gt;Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.&lt;/p&gt;
-
 &lt;h2 id=&#34;datenschutz&#34;&gt;Datenschutz&lt;/h2&gt;
-
-&lt;p&gt;Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+&lt;p&gt;Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. 
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. 
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.&lt;/p&gt;
-
 &lt;h2 id=&#34;google-analytics-derzeit-inaktiv-auf-dieser-seite&#34;&gt;Google Analytics &lt;strong&gt;(derzeit inaktiv auf dieser Seite)&lt;/strong&gt;&lt;/h2&gt;
-
 &lt;p&gt;Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&amp;ldquo;Google&amp;rdquo;). Google Analytics verwendet sog. &amp;ldquo;Cookies&amp;rdquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.&lt;/p&gt;
-
-&lt;p&gt;Impressum erstellt mithilfe des &lt;a href=&#34;https://www.impressum-generator.de&#34; target=&#34;_blank&#34;&gt;Impressum Generators&lt;/a&gt; der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht&lt;/p&gt;
+&lt;p&gt;Impressum erstellt mithilfe des &lt;a href=&#34;https://www.impressum-generator.de&#34;&gt;Impressum Generators&lt;/a&gt; der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Ecuador</title>
-      <link>/tutorial/ecuador/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/tutorial/ecuador/</guid>
-      <description>&lt;p&gt;Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach &lt;em&gt;Quito&lt;/em&gt;, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen &lt;a href=&#34;www-fes-ildis.ec/&#34; target=&#34;_blank&#34;&gt;Friedrich-Ebert-Stiftung&lt;/a&gt; zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die &lt;em&gt;Galápagos&lt;/em&gt;-Inseln besucht und die &lt;em&gt;Nebelwälder&lt;/em&gt; am Rande des Amazonas. Außerdem habe ich Ausflüge nach &lt;em&gt;Machu Picchu&lt;/em&gt;, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist. Die folgenden Bilder sind eine Auswahl derer, die dort (dortmals noch mit meiner Canon 500D) entstanden sind.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Auf dem Weg nach Santa Cruz&#34; href=&#34;/img/gala1.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/gala1.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Die Lava-Felder der Isla Isabela&#34; href=&#34;/img/gala2.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/gala2.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Blaufußtölpel vor der Küste von Isla Isabela&#34; href=&#34;/img/gala3.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/gala3.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Blick vom Panecillo auf Quito&#34; href=&#34;/img/ec1.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/ec1.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;In den Nebelwäldern&#34; href=&#34;/img/ec2.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/ec2.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Molinuco nahe Quito&#34; href=&#34;/img/ec3.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/ec3.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Schwarzwald</title>
-      <link>/tutorial/schwarzwald/</link>
+      <title>Überblick</title>
+      <link>https://yannikbuhl.netlify.com/tutorial/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tutorial/schwarzwald/</guid>
-      <description>&lt;p&gt;Im Herbst 2017 bin ich mit einem &lt;a href=&#34;https://www.instagram.com/chris_de_berghie/&#34; target=&#34;_blank&#34;&gt;Freund&lt;/a&gt; von mir in den Schwarzwald gefahren. Unser Ziel war es, so viel wie möglich von der wunderbaren Landschaft dieses Fleckchen Erdes in Baden-Württemberg zu fotografieren. Unsere Route führte uns am Ende in etwas weniger als einer Woche vom Nordschwarzwald (Hornisgrinde) bis in den Süden (Feldberg/Titisee). Auf dem Weg haben wir vor allem viele Wasserfälle besucht und mit unseren Neutraldichtefiltern experimentiert. Die Zahl an Wasserfällen war schier endlos: Triberger Wasserfälle, Zweribachwasserfälle, Burgbachwasserfall, Wasserfälle Allerheiligen&amp;hellip; Die folgenden Bilder sind alle auf dieser Reise entstanden.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw1.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/sw1.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw2.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/sw2.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw3.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/sw3.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw4.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/sw4.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-      
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;/img/sw5.jpg&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;/img/sw5.jpg&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
+      <guid>https://yannikbuhl.netlify.com/tutorial/</guid>
+      <description>&lt;p&gt;Auf den Unterseiten zu dieser Seite finden Sie eine Auswahl meiner Fotografien, geschossen auf verschiedenen Reisen in den vergangenen Jahren. Eine besondere Vorliebe hege ich für Landschafts- bzw. Outdoor-Fotografie. Seit Jahren bin ich leidenschaftlicher &lt;em&gt;Canon&lt;/em&gt;-Fan und nutze für meine Fotos eine &lt;em&gt;Canon 70D&lt;/em&gt;. Am häufigsten hängt daran mein liebstes Weitwinkelobjektiv (&lt;em&gt;Sigma 10-20 mm f/4-5.6&lt;/em&gt;) inklusive Pol- bzw. Neutraldichtefilter. Das Ganze steht in der Regel auf einem Carbon-Stativ mit Kugelkopf.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
+      <title>Posts</title>
+      <link>https://yannikbuhl.netlify.com/post/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/talk/example-talk/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  
-Click on the **Slides** button above to view the built-in slides feature.
-
-&lt;/div&gt;
-
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/project/example-external-project/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      <title>Publications</title>
+      <link>https://yannikbuhl.netlify.com/publication/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>https://yannikbuhl.netlify.com/publication/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://yannikbuhl.netlify.com/talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>https://yannikbuhl.netlify.com/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://yannikbuhl.netlify.com/project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/project/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/example-slides/</link>
+      <link>https://yannikbuhl.netlify.com/slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/example-slides/</guid>
-      <description>
-
-&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code block:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-
-&lt;p&gt;Block math:&lt;/p&gt;
-
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-   One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   Three
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/aside&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://yannikbuhl.netlify.com/slides/</guid>
+      <description></description>
     </item>
     
   </channel>

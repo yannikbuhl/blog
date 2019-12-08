@@ -1,0 +1,39 @@
+---
+title: Automatically filling a SQLite database using AWS and RStudio Server
+author: Yannik
+date: '2019-12-05'
+slug: automatically-filling-sqlite-db-using-aws
+categories: [R]
+tags: [english]
+authors: []
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+
+
+<p>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an <a href="https://www.codefor.de/stuttgart/">Open Data project</a> and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. <a href="www.stuttgarter-zeitung.de/feinstaub">Here</a> you could also find aggregated air quality data for all areas of Stuttgart. Recently, I began storing the data into a database myself to be able to do my own calculations (and eventually create a Shiny App that would display nicer, interactive graphs). Here, I wanted to <em>very quickly</em> write down what I did and what is going on.</p>
+<div id="the-sensor" class="section level4">
+<h4>The sensor</h4>
+<p>The sensor measuring fine dust is a very basic one. All its components cost around 30€ and can be shopped online. Honestly, I did not build the sensor myself; a colleague had a spare one and gave it to me. However, I was told it is not too hard to build such a sensor. In fact, <a href="https://luftdaten.info/">here</a> you can find a (German only) manual for doing so, including a list of stuff you need for the sensor itself. My sensor is located on my balcony, which in turn faces a highly frequented road, where quite a lot of buses are passing by during the day. The sensor delivers the data it measures every (more or less) five minutes via a JSON file to an API that is open for everyone to read. The sensor itself runs quite smoothly, only recently I run into problems where it ceases to send information – this is fixed after quickly removing it from its power source.</p>
+</div>
+<div id="amazon-aws-with-rstudio-server" class="section level4">
+<h4>Amazon AWS with RStudio Server</h4>
+<p>When I came up with the idea of automatically storing the data into a database, I was initially thinking about setting up a Raspberry Pi to do the job. Yet, a friend recommended using Amazon AWS instead. Frankly, when I did this, I was new to cloud computing. However, there are a lot of tutorials out there on how to set up an Amazon AWS instance. I remember choosing the smallest one (EC2) which is also completely free of charge. That is useful since it is supposed to run 24/7. Whilst setting up the instance, I also installed RStudio Server and Shiny Server. That would later allow me to work on R scripts on the instance in order to do the parsing of the JSON file.</p>
+</div>
+<div id="the-script" class="section level4">
+<h4>The script</h4>
+<p>The R script is nothing more than a simple parser for the JSON file that the API publishes. As a first step, I set up a SQLite database on my AWS instance using the R package <code>sqldf</code>. It contains only three variables: the timestamp of the measurement and the two fine dust measurements that the sensor gives us. The script parses the JSON file (using <code>jsonlite</code>) and writes it into the database using SQL. Here is some example code:</p>
+<pre><code>db &lt;- dbConnect(SQLite(), dbname = &quot;/home/user/database.sqlite&quot;)
+
+query1 &lt;- paste0(&quot;INSERT INTO database VALUES (&#39;&quot;, time1, &quot;&#39;,&quot;, PM_10_1, &quot;,&quot;, PM_25_1, &quot;)&quot;)
+
+dbSendQuery(conn = db, query1)
+</code></pre>
+</div>
+<div id="setting-up-the-crontab" class="section level4">
+<h4>Setting up the Crontab</h4>
+<p>The last step is to automate the R script that we have stored on the AWS instance, too. You can do this using a Crontab, which is an automation tool that is already present on the Linux of the EC2 instance. You can find a tutorial <a href="https://www.howtogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-to-crontab-files/">here</a>.</p>
+</div>
