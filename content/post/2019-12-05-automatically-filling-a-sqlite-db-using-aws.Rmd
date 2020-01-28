@@ -1,10 +1,13 @@
 ---
+output:
+  blogdown::html_page:
+    highlight: zenburn
 title: Automatically filling a SQLite database using AWS and RStudio Server
 author: Yannik
 date: '2019-12-05'
 slug: automatically-filling-sqlite-db-using-aws
 categories: [R]
-tags: [english]
+tags: [english, R]
 authors: []
 header:
   caption: ''
@@ -26,7 +29,7 @@ When I came up with the idea of automatically storing the data into a database, 
 
 The R script is nothing more than a simple parser for the JSON file that the API publishes. As a first step, I set up a SQLite database on my AWS instance using the R package `sqldf`. It contains only three variables: the timestamp of the measurement and the two fine dust measurements that the sensor gives us. The script parses the JSON file (using `jsonlite`) and writes it into the database using SQL. Here is some example code: 
 
-```
+```{r code, eval=FALSE}
 db <- dbConnect(SQLite(), dbname = "/home/user/database.sqlite")
 
 query1 <- paste0("INSERT INTO database VALUES ('", time1, "',", PM_10_1, ",", PM_25_1, ")")

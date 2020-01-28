@@ -2,31 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Y. Buhl</title>
-    <link>https://yannikbuhl.netlify.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yannikbuhl.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>https://yannikbuhl.netlify.com/categories/r/</link>
-      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <link>/categories/r/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modelling</title>
+      <link>/categories/modelling/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/modelling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>political science</title>
-      <link>https://yannikbuhl.netlify.com/categories/political-science/</link>
+      <link>/categories/political-science/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/categories/political-science/</guid>
+      <guid>/categories/political-science/</guid>
       <description></description>
     </item>
     

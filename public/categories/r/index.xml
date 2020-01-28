@@ -2,23 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Y. Buhl</title>
-    <link>https://yannikbuhl.netlify.com/categories/r/</link>
+    <link>/categories/r/</link>
     <description>Recent content in R on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://yannikbuhl.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Scraping Spiegel articles using {newsanchor}</title>
+      <link>/post/scraping-spiegel-articles-using-newsanchor/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/scraping-spiegel-articles-using-newsanchor/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.</description>
+    </item>
+    
+    <item>
       <title>Automatically filling a SQLite database using AWS and RStudio Server</title>
-      <link>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</link>
+      <link>/post/automatically-filling-sqlite-db-using-aws/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</guid>
-      <description>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an Open Data project and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. Here you could also find aggregated air quality data for all areas of Stuttgart.</description>
+      <guid>/post/automatically-filling-sqlite-db-using-aws/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.</description>
+    </item>
+    
+    <item>
+      <title>Introducing the R {newsanchor} package</title>
+      <link>/post/introducing-the-r-newsanchor-package/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introducing-the-r-newsanchor-package/</guid>
+      <description>At CorrelAid, we developed a tool for communication scientists, journalists and data scientists alike: {newsanchor}, CorrelAid’s first open source R package. It conveniently helps you to access breaking news and articles from over 30,000 news sources and blogs - using the API of newsapi.org. I have co-authored the package and I am thrilled to introduce the package here, too.
+The (mostly free) News API is one way to access text as a resource for data analyses.</description>
     </item>
     
   </channel>

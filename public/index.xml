@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y. Buhl on Y. Buhl</title>
-    <link>https://yannikbuhl.netlify.com/</link>
+    <link>/</link>
     <description>Recent content in Y. Buhl on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 05 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Impressum/Datenschutz</title>
-      <link>https://yannikbuhl.netlify.com/privacy/</link>
+      <link>/privacy/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/privacy/</guid>
+      <guid>/privacy/</guid>
       <description>&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;!-- raw HTML omitted --&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
 &lt;p&gt;Yannik Buhl &lt;!-- raw HTML omitted --&gt;
 Welfenstraße 50 &lt;!-- raw HTML omitted --&gt;
@@ -51,56 +51,56 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
     
     <item>
       <title>Überblick</title>
-      <link>https://yannikbuhl.netlify.com/tutorial/</link>
+      <link>/tutorial/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/tutorial/</guid>
+      <guid>/tutorial/</guid>
       <description>&lt;p&gt;Auf den Unterseiten zu dieser Seite finden Sie eine Auswahl meiner Fotografien, geschossen auf verschiedenen Reisen in den vergangenen Jahren. Eine besondere Vorliebe hege ich für Landschafts- bzw. Outdoor-Fotografie. Seit Jahren bin ich leidenschaftlicher &lt;em&gt;Canon&lt;/em&gt;-Fan und nutze für meine Fotos eine &lt;em&gt;Canon 70D&lt;/em&gt;. Am häufigsten hängt daran mein liebstes Weitwinkelobjektiv (&lt;em&gt;Sigma 10-20 mm f/4-5.6&lt;/em&gt;) inklusive Pol- bzw. Neutraldichtefilter. Das Ganze steht in der Regel auf einem Carbon-Stativ mit Kugelkopf.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://yannikbuhl.netlify.com/post/</link>
+      <link>/post/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/post/</guid>
+      <guid>/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://yannikbuhl.netlify.com/publication/</link>
+      <link>/publication/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/publication/</guid>
+      <guid>/publication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://yannikbuhl.netlify.com/talk/</link>
+      <link>/talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/talk/</guid>
+      <guid>/talk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://yannikbuhl.netlify.com/project/</link>
+      <link>/project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/project/</guid>
+      <guid>/project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://yannikbuhl.netlify.com/slides/</link>
+      <link>/slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://yannikbuhl.netlify.com/slides/</guid>
+      <guid>/slides/</guid>
       <description></description>
     </item>
     
