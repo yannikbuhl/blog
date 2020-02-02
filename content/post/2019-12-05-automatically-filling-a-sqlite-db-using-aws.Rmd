@@ -1,7 +1,4 @@
 ---
-output:
-  blogdown::html_page:
-    highlight: zenburn
 title: Automatically filling a SQLite database using AWS and RStudio Server
 author: Yannik
 date: '2019-12-05'

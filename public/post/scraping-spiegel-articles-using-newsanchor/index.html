@@ -15,7 +15,7 @@
   
     
   
-  <meta name="description" content="a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.">
+  <meta name="description" content="Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/scraping-spiegel-articles-using-newsanchor/">
@@ -49,9 +49,7 @@
     
       
       
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css" crossorigin="anonymous">
       
     
 
@@ -94,7 +92,7 @@
   <meta property="og:site_name" content="Y. Buhl">
   <meta property="og:url" content="/post/scraping-spiegel-articles-using-newsanchor/">
   <meta property="og:title" content="Scraping Spiegel articles using {newsanchor} | Y. Buhl">
-  <meta property="og:description" content="a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.">
+  <meta property="og:description" content="Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2020-01-27T00:00:00&#43;00:00">
@@ -307,144 +305,82 @@
 
     <div class="article-style" itemprop="articleBody">
       
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  { color: #cccccc; background-color: #303030; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ffcfaf; } /* Alert */
-code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
-code span.at { } /* Attribute */
-code span.bn { color: #dca3a3; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #f0dfaf; } /* ControlFlow */
-code span.ch { color: #dca3a3; } /* Char */
-code span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
-code span.co { color: #7f9f7f; } /* Comment */
-code span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
-code span.do { color: #7f9f7f; } /* Documentation */
-code span.dt { color: #dfdfbf; } /* DataType */
-code span.dv { color: #dcdccc; } /* DecVal */
-code span.er { color: #c3bf9f; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #c0bed1; } /* Float */
-code span.fu { color: #efef8f; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #7f9f7f; font-weight: bold; } /* Information */
-code span.kw { color: #f0dfaf; } /* Keyword */
-code span.op { color: #f0efd0; } /* Operator */
-code span.ot { color: #efef8f; } /* Other */
-code span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
-code span.sc { color: #dca3a3; } /* SpecialChar */
-code span.ss { color: #cc9393; } /* SpecialString */
-code span.st { color: #cc9393; } /* String */
-code span.va { } /* Variable */
-code span.vs { color: #cc9393; } /* VerbatimString */
-code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
-</style>
 
 
 <p>Almost a year ago, we (a team at <a href="www.correlaid.org">CorrelAid</a>) published our first open source package for R on CRAN: <strong>{newsanchor}</strong>. It queries the API of <a href="newsapi.org">newsapi.org</a> and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content. You can find all information needed reading its <a href="https://cran.r-project.org/web/packages/newsanchor/vignettes/usage-newsanchor.html">vignette</a>. I also wrote an introductory blog post which you can find <a href="https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/">here</a>.</p>
 <p>One convenient use of <strong>{newsanchor}</strong> is to use it to scrape the articles’ content. Our package is of great help because it provides you with the corresponding URLs. It is fairly easy to build a scraper upon that. <em>Here, I have to mention that vast parts of the following code stem from <a href="https://github.com/jandix">Jan Dix</a> who, like me, co-authored the package.</em> He wrote a scraper for the New York Times, it was originally to be included as a vignette of <strong>{newsanchor}</strong> (it had to be removed because of dependecy trouble, though). What I did was to build on his code and add another example for the popular German news magazine <a href="www.spiegel.de">Spiegel</a>.</p>
 <p><em>[Note: There is code for a progress bar in the following chunk. It is commented out so the R-Markdown output would be easier to read]</em></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Load packages required</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="kw">library</span>(newsanchor) <span class="co"># download newspaper articles</span></a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="kw">library</span>(robotstxt)  <span class="co"># get robots.txt</span></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">library</span>(httr)       <span class="co"># http requests</span></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="kw">suppressMessages</span>(<span class="kw">library</span>(rvest))      <span class="co"># web scraping tools</span></a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="kw">suppressMessages</span>(<span class="kw">library</span>(dplyr))      <span class="co"># easy data frame manipulation</span></a>
-<a class="sourceLine" id="cb1-7" title="7"><span class="kw">library</span>(stringr)    <span class="co"># string/character manipulation </span></a>
-<a class="sourceLine" id="cb1-8" title="8"></a>
-<a class="sourceLine" id="cb1-9" title="9"><span class="co"># Get headlines published by SPON using newsanchor (example)</span></a>
-<a class="sourceLine" id="cb1-10" title="10">response &lt;-<span class="st"> </span><span class="kw">get_everything_all</span>(<span class="dt">query   =</span> <span class="st">&quot;Merkel&quot;</span>,</a>
-<a class="sourceLine" id="cb1-11" title="11">                                 <span class="dt">sources =</span> <span class="st">&quot;spiegel-online&quot;</span>,</a>
-<a class="sourceLine" id="cb1-12" title="12">                                 <span class="dt">from    =</span> <span class="kw">Sys.Date</span>() <span class="op">-</span><span class="st"> </span><span class="dv">3</span>,</a>
-<a class="sourceLine" id="cb1-13" title="13">                                 <span class="dt">to      =</span> <span class="kw">Sys.Date</span>())</a>
-<a class="sourceLine" id="cb1-14" title="14">  </a>
-<a class="sourceLine" id="cb1-15" title="15"><span class="co"># Extract response data frame</span></a>
-<a class="sourceLine" id="cb1-16" title="16">articles &lt;-<span class="st"> </span>response<span class="op">$</span>results_df</a>
-<a class="sourceLine" id="cb1-17" title="17"></a>
-<a class="sourceLine" id="cb1-18" title="18"><span class="co"># Check robots.txt if scraping is OK</span></a>
-<a class="sourceLine" id="cb1-19" title="19"><span class="kw">suppressMessages</span>(allowed &lt;-<span class="st"> </span><span class="kw">paths_allowed</span>(articles<span class="op">$</span>url))</a>
-<a class="sourceLine" id="cb1-20" title="20"><span class="kw">all</span>(allowed)</a>
-<a class="sourceLine" id="cb1-21" title="21"></a>
-<a class="sourceLine" id="cb1-22" title="22"><span class="co"># Define parsing function</span></a>
-<a class="sourceLine" id="cb1-23" title="23">get_article_body &lt;-<span class="st"> </span><span class="cf">function</span> (url) {</a>
-<a class="sourceLine" id="cb1-24" title="24">  </a>
-<a class="sourceLine" id="cb1-25" title="25">  <span class="co"># Download article page</span></a>
-<a class="sourceLine" id="cb1-26" title="26">  response &lt;-<span class="st"> </span><span class="kw">GET</span>(url)</a>
-<a class="sourceLine" id="cb1-27" title="27">  </a>
-<a class="sourceLine" id="cb1-28" title="28">  <span class="co"># Check if request was successful</span></a>
-<a class="sourceLine" id="cb1-29" title="29">  <span class="cf">if</span> (response<span class="op">$</span>status_code <span class="op">!=</span><span class="st"> </span><span class="dv">200</span>) <span class="kw">return</span>(<span class="ot">NA</span>)</a>
-<a class="sourceLine" id="cb1-30" title="30">  </a>
-<a class="sourceLine" id="cb1-31" title="31">  <span class="co"># Extract HTML</span></a>
-<a class="sourceLine" id="cb1-32" title="32">  html &lt;-<span class="st"> </span><span class="kw">content</span>(<span class="dt">x        =</span> response, </a>
-<a class="sourceLine" id="cb1-33" title="33">                  <span class="dt">type     =</span> <span class="st">&quot;text&quot;</span>, </a>
-<a class="sourceLine" id="cb1-34" title="34">                  <span class="dt">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</a>
-<a class="sourceLine" id="cb1-35" title="35">  </a>
-<a class="sourceLine" id="cb1-36" title="36">  <span class="co"># Parse html</span></a>
-<a class="sourceLine" id="cb1-37" title="37">  parsed_html &lt;-<span class="st"> </span><span class="kw">read_html</span>(html)                   </a>
-<a class="sourceLine" id="cb1-38" title="38">  </a>
-<a class="sourceLine" id="cb1-39" title="39">  <span class="co"># Define paragraph DOM selector</span></a>
-<a class="sourceLine" id="cb1-40" title="40">  selector &lt;-<span class="st"> &quot;div.clearfix p&quot;</span></a>
-<a class="sourceLine" id="cb1-41" title="41">  </a>
-<a class="sourceLine" id="cb1-42" title="42">  <span class="co"># Parse content</span></a>
-<a class="sourceLine" id="cb1-43" title="43">  parsed_html <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-44" title="44"><span class="st">    </span><span class="kw">html_nodes</span>(selector) <span class="op">%&gt;%</span><span class="st">      </span><span class="co"># extract all paragraphs within class &#39;article-section&#39;</span></a>
-<a class="sourceLine" id="cb1-45" title="45"><span class="st">    </span><span class="kw">html_text</span>() <span class="op">%&gt;%</span><span class="st">               </span><span class="co"># extract content of the &lt;p&gt; tags</span></a>
-<a class="sourceLine" id="cb1-46" title="46"><span class="st">    </span><span class="kw">str_replace_all</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>, <span class="st">&quot;&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># replace all line breaks</span></a>
-<a class="sourceLine" id="cb1-47" title="47"><span class="st">    </span><span class="kw">paste</span>(<span class="dt">collapse =</span> <span class="st">&quot; &quot;</span>)         <span class="co"># join all paragraphs into one string</span></a>
-<a class="sourceLine" id="cb1-48" title="48">}</a>
-<a class="sourceLine" id="cb1-49" title="49"></a>
-<a class="sourceLine" id="cb1-50" title="50"><span class="co"># Apply function to all URLs</span></a>
-<a class="sourceLine" id="cb1-51" title="51"><span class="co"># Create new text column</span></a>
-<a class="sourceLine" id="cb1-52" title="52">articles<span class="op">$</span>body &lt;-<span class="st"> </span><span class="ot">NA</span></a>
-<a class="sourceLine" id="cb1-53" title="53"></a>
-<a class="sourceLine" id="cb1-54" title="54"><span class="co"># Initialize progress bar</span></a>
-<a class="sourceLine" id="cb1-55" title="55"><span class="co"># pb &lt;- txtProgressBar(min     = 1, </span></a>
-<a class="sourceLine" id="cb1-56" title="56"><span class="co">#                      max     = nrow(articles), </span></a>
-<a class="sourceLine" id="cb1-57" title="57"><span class="co">#                      initial = 1, </span></a>
-<a class="sourceLine" id="cb1-58" title="58"><span class="co">#                      style   = 3)</span></a>
-<a class="sourceLine" id="cb1-59" title="59"></a>
-<a class="sourceLine" id="cb1-60" title="60"><span class="co"># Loop through articles and apply function</span></a>
-<a class="sourceLine" id="cb1-61" title="61"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(articles)) {</a>
-<a class="sourceLine" id="cb1-62" title="62">  </a>
-<a class="sourceLine" id="cb1-63" title="63">  <span class="co"># Apply function to i in URLS</span></a>
-<a class="sourceLine" id="cb1-64" title="64">  articles<span class="op">$</span>body[i] &lt;-<span class="st"> </span><span class="kw">get_article_body</span>(articles<span class="op">$</span>url[i])</a>
-<a class="sourceLine" id="cb1-65" title="65">  </a>
-<a class="sourceLine" id="cb1-66" title="66">  <span class="co">## Update progress bar</span></a>
-<a class="sourceLine" id="cb1-67" title="67">  <span class="co"># setTxtProgressBar(pb, i)</span></a>
-<a class="sourceLine" id="cb1-68" title="68">  </a>
-<a class="sourceLine" id="cb1-69" title="69">  <span class="co"># Sleep for 1 sec</span></a>
-<a class="sourceLine" id="cb1-70" title="70">  <span class="kw">Sys.sleep</span>(<span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-71" title="71">}</a></code></pre></div>
+<pre class="r"><code># Load packages required
+library(newsanchor) # download newspaper articles
+library(robotstxt)  # get robots.txt
+library(httr)       # http requests
+suppressMessages(library(rvest))      # web scraping tools
+suppressMessages(library(dplyr))      # easy data frame manipulation
+library(stringr)    # string/character manipulation 
+
+# Get headlines published by SPON using newsanchor (example)
+response &lt;- get_everything_all(query   = &quot;Merkel&quot;,
+                                 sources = &quot;spiegel-online&quot;,
+                                 from    = Sys.Date() - 3,
+                                 to      = Sys.Date())
+  
+# Extract response data frame
+articles &lt;- response$results_df
+
+# Check robots.txt if scraping is OK
+suppressMessages(allowed &lt;- paths_allowed(articles$url))
+all(allowed)
+
+# Define parsing function
+get_article_body &lt;- function (url) {
+  
+  # Download article page
+  response &lt;- GET(url)
+  
+  # Check if request was successful
+  if (response$status_code != 200) return(NA)
+  
+  # Extract HTML
+  html &lt;- content(x        = response, 
+                  type     = &quot;text&quot;, 
+                  encoding = &quot;UTF-8&quot;)
+  
+  # Parse html
+  parsed_html &lt;- read_html(html)                   
+  
+  # Define paragraph DOM selector
+  selector &lt;- &quot;div.clearfix p&quot;
+  
+  # Parse content
+  parsed_html %&gt;% 
+    html_nodes(selector) %&gt;%      # extract all paragraphs within class &#39;article-section&#39;
+    html_text() %&gt;%               # extract content of the &lt;p&gt; tags
+    str_replace_all(&quot;\n&quot;, &quot;&quot;) %&gt;% # replace all line breaks
+    paste(collapse = &quot; &quot;)         # join all paragraphs into one string
+}
+
+# Apply function to all URLs
+# Create new text column
+articles$body &lt;- NA
+
+# Initialize progress bar
+# pb &lt;- txtProgressBar(min     = 1, 
+#                      max     = nrow(articles), 
+#                      initial = 1, 
+#                      style   = 3)
+
+# Loop through articles and apply function
+for (i in 1:nrow(articles)) {
+  
+  # Apply function to i in URLS
+  articles$body[i] &lt;- get_article_body(articles$url[i])
+  
+  ## Update progress bar
+  # setTxtProgressBar(pb, i)
+  
+  # Sleep for 1 sec
+  Sys.sleep(1)
+}</code></pre>
 <p>Based on the articles’ content, you can, for example, compute sentiment analyses. Jan shows you how to do that for the New York Times in what was formerly our vignette <a href="https://github.com/CorrelAid/newsanchor/blob/master/examples/scrape-nyt.Rmd">here</a>. I hope this is useful for some of you.</p>
 
     </div>
@@ -558,6 +494,8 @@ code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
       
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
         
       
 

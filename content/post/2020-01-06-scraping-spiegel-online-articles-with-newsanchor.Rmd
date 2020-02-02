@@ -1,7 +1,4 @@
 ---
-output:
-  blogdown::html_page:
-    highlight: zenburn
 title: Scraping Spiegel articles using {newsanchor}
 author: Yannik
 date: '2020-01-27'

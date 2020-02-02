@@ -18,7 +18,7 @@
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/scraping-spiegel-articles-using-newsanchor/</guid>
-      <description>a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.</description>
+      <description>Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/automatically-filling-sqlite-db-using-aws/</guid>
-      <description>a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.2em; }.sourceCode { overflow: visible; }code.sourceCode { white-space: pre; position: relative; }div.sourceCode { margin: 1em 0; }pre.sourceCode { margin: 0; }@media screen {div.sourceCode { overflow: auto; }}@media print {code.sourceCode { white-space: pre-wrap; }a.sourceLine { text-indent: -1em; padding-left: 1em; }}pre.</description>
+      <description>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an Open Data project and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. Here you could also find aggregated air quality data for all areas of Stuttgart.</description>
     </item>
     
     <item>
