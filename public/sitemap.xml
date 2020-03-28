@@ -3,7 +3,7 @@
     
     <url>
     
-      <loc>/post/see-german-shopping-streets-empty/</loc>
+      <loc>/categories/</loc>
       <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -11,8 +11,8 @@
     
     <url>
     
-      <loc>/categories/</loc>
-      <lastmod>2020-01-27T00:00:00+00:00</lastmod>
+      <loc>/post/see-german-shopping-streets-emptying/</loc>
+      <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -20,7 +20,7 @@
     <url>
     
       <loc>/tags/english/</loc>
-      <lastmod>2020-01-27T00:00:00+00:00</lastmod>
+      <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -28,7 +28,7 @@
     <url>
     
       <loc>/tags/r/</loc>
-      <lastmod>2020-01-27T00:00:00+00:00</lastmod>
+      <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -36,15 +36,7 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2020-01-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/scraping-spiegel-articles-using-newsanchor/</loc>
-      <lastmod>2020-01-27T00:00:00+00:00</lastmod>
+      <lastmod>2020-03-28T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -52,6 +44,14 @@
     <url>
     
       <loc>/tags/</loc>
+      <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/scraping-spiegel-articles-using-newsanchor/</loc>
       <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     </url>
     

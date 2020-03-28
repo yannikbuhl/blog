@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/english/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Covid-19 - See German shopping streets emptying</title>
+      <link>/post/see-german-shopping-streets-emptying/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/see-german-shopping-streets-emptying/</guid>
+      <description>The coronavirus is halting public live all over the world. So, many of the patterns of data regarding flight departures or traffic that we see these days are, objectively speaking, unsurprising. As of now, most of us are coping well with the situation and stay at home, as is recommended. As a result, the public sphere is emptying. Right now, this is a strategy that I support. However, it is hitting the economy harder than one might think.</description>
+    </item>
     
     <item>
       <title>Scraping Spiegel articles using {newsanchor}</title>
