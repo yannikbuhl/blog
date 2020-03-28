@@ -1,0 +1,15 @@
+---
+title: See German shopping streets empty
+author: Yannik
+date: '2020-03-28'
+slug: see-german-shopping-streets-empty
+categories: []
+tags: []
+authors: []
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+This needs to be a test blog post because Hugo is messing with me. 

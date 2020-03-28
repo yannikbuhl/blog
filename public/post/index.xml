@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>See German shopping streets empty</title>
+      <link>/post/see-german-shopping-streets-empty/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/see-german-shopping-streets-empty/</guid>
+      <description>This needs to be a test blog post because Hugo is messing with me.</description>
+    </item>
+    
+    <item>
       <title>Scraping Spiegel articles using {newsanchor}</title>
       <link>/post/scraping-spiegel-articles-using-newsanchor/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>

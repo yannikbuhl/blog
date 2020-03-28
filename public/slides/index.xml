@@ -20,7 +20,7 @@
       <description>Welcome to Slides Academic
  Features  Efficiently write slides in Markdown 3-in-1: Create, Present, and Publish your slides Supports speaker notes Mobile friendly slides   Controls  Next: Right Arrow or Space Previous: Left Arrow Start: Home Finish: End Overview: Esc Speaker notes: S Fullscreen: F Zoom: Alt + Click PDF Export: E   Code Highlighting Inline code: variable
 Code block:
-porridge = &amp;#34;blueberry&amp;#34; if porridge == &amp;#34;blueberry&amp;#34;: print(&amp;#34;Eating.</description>
+porridge = &amp;#34;blueberry&amp;#34;if porridge == &amp;#34;blueberry&amp;#34;:print(&amp;#34;Eating.</description>
     </item>
     
   </channel>
