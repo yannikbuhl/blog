@@ -12,8 +12,8 @@ draft = false
 Angaben gemäß § 5 TMG & <br /> verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
 Yannik Buhl <br />
-Welfenstraße 50 <br />
-70599 Stuttgart
+Blumenstraße 44 <br />
+70182 Stuttgart
 
 [Kontakt](mailto:buhl-netlify@posteo.de)
 
