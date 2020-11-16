@@ -49,8 +49,8 @@ Mein größtes **Hobby** ist die **Fotografie**. Eine Auswahl an Fotos gibt es a
 - *HTML/CSS*: 2/5
 - *SQL*: 2/5
 - *Stata*: 2/5
-- *Sonstiges*: Python (1/5), Markdown (3/5), Docker (1/5)
+- *Sonstiges*: Python (2/5), Bash/Linux (2/5) Markdown (3/5), Docker (1/5)
 
 #### Quantitative Methoden (1 bis 5)
 - *Multivariate Verfahren*: 4/5
-- *Machine Learning*: 1/5
+- *Machine Learning*: 2/5

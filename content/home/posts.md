@@ -9,7 +9,7 @@ title = "Blog"
 subtitle = "Kürzlich veröffentlicht"
 
 # Order that this section will appear in.
-weight = 40
+weight = 28
 
 # Filter posts by tag.
 #  By default, show all recent posts.
