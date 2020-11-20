@@ -1,3 +1,5 @@
+/* ********* FONT **************** */
+
 html {
   font-family: Palatino, "Palatino Linotype", Georgia, serif;
 }
@@ -8,4 +10,57 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  color: #4fe34f;
 }
+
+/* ********** FONT COLOR *************** */
+
+.btn-outline-primary:hover {
+  border-color: #d8e557;
+  background-color: transparent;
+  color: #d8e557;
+}
+
+.btn-outline-primary {
+  color: #4fe34f;
+  border-color: #4fe34f;
+}
+
+/* *********************************** */
+
+a {
+  color: #4fe34f;
+}
+
+h3.article-title a:hover {
+  color: #d8e557;
+}
+
+a:focus {
+  color:#4fe34f;
+}
+
+a:hover, h3.article-title:hover {
+  color: #d8e557;
+}
+
+.dark .article-title a {
+  color: #4fe34f;
+}
+
+/* TODO: Nach dem Klick */
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #d8e557;
+  background-color: transparent;
+  border-color: #d8e557;
+}
+
+
+
+
+
+
+
