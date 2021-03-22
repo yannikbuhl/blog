@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>english on Y. Buhl</title>
-    <link>/tags/english/</link>
-    <description>Recent content in english on Y. Buhl</description>
+    <title>English on Y. Buhl</title>
+    <link>https://yannikbuhl.netlify.com/tags/english/</link>
+    <description>Recent content in English on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/english/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yannikbuhl.netlify.com/tags/english/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Covid-19 - See German shopping streets emptying</title>
-      <link>/post/see-german-shopping-streets-emptying/</link>
+      <link>https://yannikbuhl.netlify.com/post/see-german-shopping-streets-emptying/</link>
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/see-german-shopping-streets-emptying/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/see-german-shopping-streets-emptying/</guid>
       <description>The coronavirus is halting public live all over the world. So, many of the patterns of data regarding flight departures or traffic that we see these days are, objectively speaking, unsurprising. As of now, most of us are coping well with the situation and stay at home, as is recommended. As a result, the public sphere is emptying. Right now, this is a strategy that I support. However, it is hitting the economy harder than one might think.</description>
     </item>
     
     <item>
       <title>Scraping Spiegel articles using {newsanchor}</title>
-      <link>/post/scraping-spiegel-articles-using-newsanchor/</link>
+      <link>https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/scraping-spiegel-articles-using-newsanchor/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/</guid>
       <description>Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.</description>
     </item>
     
     <item>
       <title>Automatically filling a SQLite database using AWS and RStudio Server</title>
-      <link>/post/automatically-filling-sqlite-db-using-aws/</link>
+      <link>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</link>
       <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/automatically-filling-sqlite-db-using-aws/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</guid>
       <description>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an Open Data project and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. Here you could also find aggregated air quality data for all areas of Stuttgart.</description>
     </item>
     
     <item>
       <title>Introducing the R {newsanchor} package</title>
-      <link>/post/introducing-the-r-newsanchor-package/</link>
+      <link>https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/introducing-the-r-newsanchor-package/</guid>
+      <guid>https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/</guid>
       <description>At CorrelAid, we developed a tool for communication scientists, journalists and data scientists alike: {newsanchor}, CorrelAid’s first open source R package. It conveniently helps you to access breaking news and articles from over 30,000 news sources and blogs - using the API of newsapi.org. I have co-authored the package and I am thrilled to introduce the package here, too.
 The (mostly free) News API is one way to access text as a resource for data analyses.</description>
     </item>

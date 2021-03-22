@@ -1,59 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Y. Buhl</title>
-    <link>/tags/</link>
+    <link>https://yannikbuhl.netlify.com/tags/</link>
     <description>Recent content in Tags on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yannikbuhl.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>english</title>
-      <link>/tags/english/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/english/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      <title>Ddj</title>
+      <link>https://yannikbuhl.netlify.com/tags/ddj/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0100</pubDate>
       
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>political science</title>
-      <link>/tags/political-science/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/political-science/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/ddj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
+      <link>https://yannikbuhl.netlify.com/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/tags/deep-learning/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/tags/demo/</link>
+      <link>https://yannikbuhl.netlify.com/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/tags/demo/</guid>
+      <guid>https://yannikbuhl.netlify.com/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>https://yannikbuhl.netlify.com/tags/english/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Political science</title>
+      <link>https://yannikbuhl.netlify.com/tags/political-science/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/tags/political-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://yannikbuhl.netlify.com/tags/r/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/tags/r/</guid>
       <description></description>
     </item>
     

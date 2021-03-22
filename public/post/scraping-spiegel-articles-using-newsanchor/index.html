@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 2.4.0">
-  <meta name="generator" content="Hugo 0.68.3" />
+  <meta name="generator" content="Hugo 0.48" />
   <meta name="author" content="Yannik Buhl">
 
   
@@ -18,7 +18,7 @@
   <meta name="description" content="Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/scraping-spiegel-articles-using-newsanchor/">
+  <link rel="alternate" hreflang="en-us" href="https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/">
 
   
 
@@ -74,15 +74,15 @@
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Y. Buhl">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Y. Buhl">
+  <link rel="alternate" href="https://yannikbuhl.netlify.com/index.xml" type="application/rss+xml" title="Y. Buhl">
+  <link rel="feed" href="https://yannikbuhl.netlify.com/index.xml" type="application/rss+xml" title="Y. Buhl">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/scraping-spiegel-articles-using-newsanchor/">
+  <link rel="canonical" href="https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,7 +90,7 @@
   <meta property="twitter:creator" content="@YBuhl">
   
   <meta property="og:site_name" content="Y. Buhl">
-  <meta property="og:url" content="/post/scraping-spiegel-articles-using-newsanchor/">
+  <meta property="og:url" content="https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/">
   <meta property="og:title" content="Scraping Spiegel articles using {newsanchor} | Y. Buhl">
   <meta property="og:description" content="Almost a year ago, we (a team at CorrelAid) published our first open source package for R on CRAN: {newsanchor}. It queries the API of newsapi.org and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content.">
   <meta property="og:locale" content="en-us">
@@ -304,10 +304,7 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      
-
-
-<p>Almost a year ago, we (a team at <a href="www.correlaid.org">CorrelAid</a>) published our first open source package for R on CRAN: <strong>{newsanchor}</strong>. It queries the API of <a href="newsapi.org">newsapi.org</a> and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content. You can find all information needed reading its <a href="https://cran.r-project.org/web/packages/newsanchor/vignettes/usage-newsanchor.html">vignette</a>. I also wrote an introductory blog post which you can find <a href="https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/">here</a>.</p>
+      <p>Almost a year ago, we (a team at <a href="www.correlaid.org">CorrelAid</a>) published our first open source package for R on CRAN: <strong>{newsanchor}</strong>. It queries the API of <a href="newsapi.org">newsapi.org</a> and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content. You can find all information needed reading its <a href="https://cran.r-project.org/web/packages/newsanchor/vignettes/usage-newsanchor.html">vignette</a>. I also wrote an introductory blog post which you can find <a href="https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/">here</a>.</p>
 <p>One convenient use of <strong>{newsanchor}</strong> is to use it to scrape the articles’ content. Our package is of great help because it provides you with the corresponding URLs. It is fairly easy to build a scraper upon that. <em>Here, I have to mention that vast parts of the following code stem from <a href="https://github.com/jandix">Jan Dix</a> who, like me, co-authored the package.</em> He wrote a scraper for the New York Times, it was originally to be included as a vignette of <strong>{newsanchor}</strong> (it had to be removed because of dependecy trouble, though). What I did was to build on his code and add another example for the popular German news magazine <a href="www.spiegel.de">Spiegel</a>.</p>
 <p><em>[Note: There is code for a progress bar in the following chunk. It is commented out so the R-Markdown output would be easier to read]</em></p>
 <pre class="r"><code># Load packages required
@@ -431,7 +428,7 @@ for (i in 1:nrow(articles)) {
   
 
   <p class="powered-by">
-    © 2018 &middot; 
+    &copy; 2018 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

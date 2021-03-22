@@ -70,10 +70,10 @@
 # About widget
 
 - id: interests
-  translation: Interests
+  translation: Interessen
 
 - id: education
-  translation: Education
+  translation: Ausbildung
 
 # Publications widget
 

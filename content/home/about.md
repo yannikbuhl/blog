@@ -10,10 +10,10 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Datenjournalismus",
+    "Datenanalyse, Datenjournalismus",
     "Politik, Wirtschaft & Gesellschaft",
     "[R/RStudio](https://www.rstudio.com/) & quantitative Methoden",
-    "Vergleichende Regierungslehre & Politische Soziologie"
+    "Vergleichende Regierungslehre / Politische Soziologie"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -35,9 +35,9 @@ weight = 5
 +++
 
 # Biographie
-Mein Name ist Yannik Buhl, ich bin Datenjournalist und Wirtschaftsredakteur bei **Stuttgarter Zeitung** und **Stuttgarter Nachrichten**. Seit Juni 2019 schreibe ich vor allem über die Mobilitätswende und Verkehrspolitik, außerdem kümmere ich mich um datenjournalistische Projekte. Bis August 2017 habe ich an der Universität Mannheim **M.A. Political Science** mit Schwerpunkt quantitative Methoden studiert. Ich schreibe ebenso gerne Reportagen wie Code, hauptsächlich **R**-Code.
+Mein Name ist Yannik Buhl, ich bin Wissenschaftlicher Mitarbeiter beim Statistischen Bundesamt in Wiesbaden, im Bereich **Erforschung neuer digitaler Daten**. Davor habe ich als Datenjournalist und Wirtschaftsredakteur in Stuttgart gearbeitet. 
 
-Als **Schreiber** interessiere ich mich für die Schnittstellen zwischen Gesellschaft, Politik und Wirtschaft. In der **Medienwelt** beschäftige ich mich mit Datenjournalismus und den Schnittstellen von Journalismus und Sozialwissenschaft (bspw. bei [ddjbw](http://www.ddjbw.de/)). Und in der **Politikwissenschaft** begeistern mich die Schnittstellen von Vergleichender Regierungslehre und Politischer Soziologie/Psychologie -- und das politische System Schottlands. 
+Mein Interesse gilt hauptsächlich den Schnittstellen zwischen **Gesellschaft, Politik und Wirtschaft**, speziell zwischen Sozial- und Wirtschaftswissenschaft sowie deren Interaktion mit den Medien. In der **Politikwissenschaft** gilt meine Leidenschaft dem Zusammenspiel Vergleichender Regierungslehre und Politischer Soziologie/Psychologie -- sowie dem politischen System **Schottlands**. Methodisch interessiere ich mich sehr für die Themen **Automatisierung, Umfragedaten und statistische Modellierung**. 
 
 Zu guter Letzt engagiere ich mich mit Freude bei der Non-Profit-Initiative [CorrelAid](http://www.correlaid.org/) für Datenanalysen zum guten Zweck. Im März 2019 haben wir dort beispielsweise unser erstes Open-Source-Package für *R* auf CRAN veröffentlicht, das ich mitentwickelt habe: [*{newsanchor}*](https://github.com/CorrelAid/newsanchor) (mehr Infos [hier](https://correlaid.org/blog/newsanchor/)). Im November 2020 ist außerdem auf CRAN das R-Paket [*{pocketapi}*](https://github.com/CorrelAid/pocketapi) hinzugekommen, das ich ebenfalls mitentwickelt habe und das ein Wrapper für die API von [Pocket](https://getpocket.com) ist.
 
@@ -46,7 +46,7 @@ Mein größtes **Hobby** ist die **Landschafts- und Naturfotografie**. Eine Ausw
 #### Software & Programmieren (1 bis 5)
 - *R/R Studio*: 4/5
 - *Git/GitHub*: 3/5
-- *Python/Jupyter*: 2/5
+- *Python/Jupyter*: 3/5
 - *HTML/CSS*: 2/5
 - *Bash/Linux*: 2/5
 - *SQL*: 2/5

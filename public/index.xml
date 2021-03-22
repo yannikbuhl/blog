@@ -1,107 +1,778 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Y. Buhl on Y. Buhl</title>
-    <link>/</link>
+    <link>https://yannikbuhl.netlify.com/</link>
     <description>Recent content in Y. Buhl on Y. Buhl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Automated Reporting</title>
+      <link>https://yannikbuhl.netlify.com/talk/talk1/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/talk/talk1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Covid-19 - See German shopping streets emptying</title>
+      <link>https://yannikbuhl.netlify.com/post/see-german-shopping-streets-emptying/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/post/see-german-shopping-streets-emptying/</guid>
+      <description>&lt;p&gt;The coronavirus is halting public live all over the world. So, many of the patterns of data regarding flight departures or traffic that we see these days are, objectively speaking, unsurprising. As of now, most of us are coping well with the situation and stay at home, as is recommended. As a result, the public sphere is emptying. Right now, this is a strategy that I support. However, it is hitting the economy harder than one might think. This is especially true for the small shops in the city centres. Most of them have been forced to close.&lt;/p&gt;
+&lt;p&gt;So, looking at pedestrian data can show us two things, anyway. 1) They show us how persistently people are keeping away from German city centres. And 2) they show us a rough estimate of how bad the situation is for the shops in the city centres. Maybe two years ago, I learned from a colleague that there is this new homepage where one could get pedestrian data from German cities, where they measure the amount of pedestrians on central German shopping streets using lasers. The site is called &lt;a href=&#34;https://hystreet.com/&#34;&gt;hystreet.com&lt;/a&gt; and its data can be downloaded freely after creating an account. Since the spread of Covid-19, some journalists have had a look at this kind of data already for the big German cities. In this tiny, quick hands-on analysis, I focus on the federal state of Baden-Württemberg, which is where I live.&lt;/p&gt;
+&lt;p&gt;First, we need a couple of packages.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse, warn.conflicts = FALSE)
+library(here)
+library(lubridate)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Second, we need to do a bit of data wrangling. I start with loading two datasets that I downloaded from &lt;em&gt;hystreet.com&lt;/em&gt;. They contain data for the largest shopping street in Stuttgart, the Königstraße. The dataset from 2020 contains data from January 6th until March 26th. I have a second one from 2019 that contains data from March 1st to March 31st.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Read the csv file from hystreet.com
+df1 &amp;lt;- read.csv(here::here(&amp;quot;static/files/stuttgart-königstraße-mitte.csv&amp;quot;), 
+                sep = &amp;quot;;&amp;quot;, 
+                stringsAsFactors = FALSE)
+
+df2 &amp;lt;- read.csv(here::here(&amp;quot;static/files/stuttgart-königstraße-mitte-2019.csv&amp;quot;), 
+                sep = &amp;quot;;&amp;quot;, 
+                stringsAsFactors = FALSE)
+
+# Some data preparation
+df1 &amp;lt;- df1 %&amp;gt;% mutate(time_of_measurement = as.POSIXct(time_of_measurement),
+               date = lubridate::as_date(time_of_measurement),
+               time = lubridate::ceiling_date(time_of_measurement, unit = &amp;quot;hours&amp;quot;))
+
+df2 &amp;lt;- df2 %&amp;gt;% mutate(time_of_measurement = as.POSIXct(time_of_measurement),
+               date = lubridate::as_date(time_of_measurement),
+               time = lubridate::ceiling_date(time_of_measurement, unit = &amp;quot;hours&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After doing so, the data set looks like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(df1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Observations: 30,934
+## Variables: 7
+## $ location            &amp;lt;chr&amp;gt; &amp;quot;KÃ¶nigstraÃŸe (Mitte), Stuttgart&amp;quot;, &amp;quot;KÃ¶nigstra...
+## $ time_of_measurement &amp;lt;dttm&amp;gt; 2020-01-06 00:04:21, 2020-01-06 00:09:56, 2020...
+## $ counted_pedestrians &amp;lt;int&amp;gt; 31, 24, 34, 30, 32, 23, 23, 12, 27, 27, 15, 14,...
+## $ type                &amp;lt;chr&amp;gt; &amp;quot;regular&amp;quot;, &amp;quot;regular&amp;quot;, &amp;quot;regular&amp;quot;, &amp;quot;regular&amp;quot;, &amp;quot;re...
+## $ incidents           &amp;lt;lgl&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ date                &amp;lt;date&amp;gt; 2020-01-06, 2020-01-06, 2020-01-06, 2020-01-06...
+## $ time                &amp;lt;dttm&amp;gt; 2020-01-06 01:00:00, 2020-01-06 01:00:00, 2020...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(df1, n = 5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                           location time_of_measurement counted_pedestrians
+## 1 KÃ¶nigstraÃŸe (Mitte), Stuttgart 2020-01-06 00:04:21                  31
+## 2 KÃ¶nigstraÃŸe (Mitte), Stuttgart 2020-01-06 00:09:56                  24
+## 3 KÃ¶nigstraÃŸe (Mitte), Stuttgart 2020-01-06 00:14:15                  34
+## 4 KÃ¶nigstraÃŸe (Mitte), Stuttgart 2020-01-06 00:19:58                  30
+## 5 KÃ¶nigstraÃŸe (Mitte), Stuttgart 2020-01-06 00:24:37                  32
+##      type incidents       date                time
+## 1 regular        NA 2020-01-06 2020-01-06 01:00:00
+## 2 regular        NA 2020-01-06 2020-01-06 01:00:00
+## 3 regular        NA 2020-01-06 2020-01-06 01:00:00
+## 4 regular        NA 2020-01-06 2020-01-06 01:00:00
+## 5 regular        NA 2020-01-06 2020-01-06 01:00:00&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first thing I am interested in is the long-term perspective. First restrictions on public life have been announced by the federal government on March 17th (red line in the figure below), further restrictions followed on March 23rd (blue line in the figure below). The second figure shows a comparable time span from 2019. This way, we can (if only slightly) control for seasonal effects, too. That second time span of 2019 serves as a benchmark for how the number of pedestrians would have developed if the coronavirus restrictions would not have hit. I scaled the y axis equally to a maximum of 15,000 pedestrians per hour to spot the difference more easily.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df1 %&amp;gt;% filter(date &amp;gt;= &amp;quot;2020-03-01&amp;quot;) %&amp;gt;% group_by(time) %&amp;gt;% summarise(n = sum(counted_pedestrians)) %&amp;gt;%
+ ggplot(aes(x = time, y = n)) + 
+  geom_line(size = 1) +
+  geom_vline(xintercept = as.POSIXct(&amp;quot;2020-03-17&amp;quot;), color = &amp;quot;red&amp;quot;) +
+  geom_vline(xintercept = as.POSIXct(&amp;quot;2020-03-23&amp;quot;), color = &amp;quot;blue&amp;quot;) +
+  ggtitle(&amp;quot;2020: Pedestrians in the Stuttgart city centre&amp;quot;, subtitle = &amp;quot;Cumulated number on Königstraße (Mitte)&amp;quot;) + 
+  labs(caption = &amp;quot;Source: hystreet.com&amp;quot;) + 
+  xlab(&amp;quot;Date&amp;quot;) + 
+  ylab(&amp;quot;Sum of pedestrians per hour&amp;quot;) +
+  ylim(0, 15000)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://yannikbuhl.netlify.com/post/2020-03-28-see-german-shopping-streets-empty_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df2 %&amp;gt;% filter(date &amp;lt;= &amp;quot;2019-03-26&amp;quot;) %&amp;gt;% group_by(time) %&amp;gt;% summarise(n = sum(counted_pedestrians)) %&amp;gt;%
+ ggplot(aes(x = time, y = n)) + 
+  geom_line(size = 1) +
+  ggtitle(&amp;quot;2019: Pedestrians in the Stuttgart city centre&amp;quot;, subtitle = &amp;quot;Cumulated number on Königstraße (Mitte)&amp;quot;) + 
+  labs(caption = &amp;quot;Source: hystreet.com&amp;quot;) + 
+  xlab(&amp;quot;Date&amp;quot;) + 
+  ylab(&amp;quot;Sum of pedestrians per hour&amp;quot;) + 
+  ylim(0, 15000)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://yannikbuhl.netlify.com/post/2020-03-28-see-german-shopping-streets-empty_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can see that even before the restrictions were passed by the federal government, numbers of pedestrians were already in decline and are now almost absent. In raw numbers, this is (again, compared to 2019):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df1 %&amp;gt;% group_by(date) %&amp;gt;% summarise(n = sum(counted_pedestrians)) %&amp;gt;% tail(., n = 7)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 7 x 2
+##   date           n
+##   &amp;lt;date&amp;gt;     &amp;lt;int&amp;gt;
+## 1 2020-03-20  9908
+## 2 2020-03-21  2884
+## 3 2020-03-22  4350
+## 4 2020-03-23  6628
+## 5 2020-03-24  7564
+## 6 2020-03-25  6692
+## 7 2020-03-26   656&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df2 %&amp;gt;% group_by(date) %&amp;gt;% summarise(n = sum(counted_pedestrians)) %&amp;gt;% tail(., n = 7)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 7 x 2
+##   date            n
+##   &amp;lt;date&amp;gt;      &amp;lt;int&amp;gt;
+## 1 2019-03-25  34788
+## 2 2019-03-26  40252
+## 3 2019-03-27  44181
+## 4 2019-03-28  50518
+## 5 2019-03-29  69944
+## 6 2019-03-30 148604
+## 7 2019-03-31  35709&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As a last analysis, I want to focus on the weekends, unsurprisingly the days with most pedestrians in the city centres. This last figure basically speaks for itself. I compare two weekends end of March, 2020 versus 2019. It is evident 1) how many people stayed home (as long as they did not meet up in any other place instead) and 2) how many potential customers the city centre shops are missing every day (and especially Saturday) that they have to remain closed.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;time1 &amp;lt;- seq.POSIXt(as.POSIXct(&amp;quot;2020-03-20 00:00:00&amp;quot;), as.POSIXct(&amp;quot;2020-03-23 00:00:00&amp;quot;), by = &amp;quot;hour&amp;quot;)
+time2 &amp;lt;- seq.POSIXt(as.POSIXct(&amp;quot;2019-03-22 00:00:00&amp;quot;), as.POSIXct(&amp;quot;2019-03-25 00:00:00&amp;quot;), by = &amp;quot;hour&amp;quot;)
+
+plot1 &amp;lt;- df1 %&amp;gt;%
+   filter(time %in% time1) %&amp;gt;%
+   group_by(time) %&amp;gt;%
+   summarise(n = sum(counted_pedestrians)) %&amp;gt;%
+   mutate(hour = lubridate::hour(time),
+          date = lubridate::as_date(time),
+          day = lubridate::day(time),
+          id = 1:length(n))
+
+plot2 &amp;lt;- df2 %&amp;gt;%
+    filter(time %in% time2) %&amp;gt;%
+    group_by(time) %&amp;gt;%
+    summarise(n = sum(counted_pedestrians)) %&amp;gt;% 
+    mutate(hour = lubridate::hour(time),
+          date = lubridate::as_date(time),
+          day = lubridate::day(time),
+          id = 1:length(n))
+
+ plot1 %&amp;gt;% ggplot(aes(x = id, y = n)) + geom_line(size = 1, color = &amp;quot;red&amp;quot;) +
+   ggtitle(&amp;quot;Pedestrians on a March weekend 2020 (red) versus 2019&amp;quot;,
+           subtitle = &amp;quot;Königstraße Stuttgart (Mitte)&amp;quot;) +
+   ylim(0, 15000)+
+   ylab(&amp;quot;Number of pedestrians per hour&amp;quot;) +
+   xlab(&amp;quot;Time in hours (start: Friday 00:00)&amp;quot;) +
+   geom_line(data = plot2) +
+   labs(caption = &amp;quot;Source: hystreet.com&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://yannikbuhl.netlify.com/post/2020-03-28-see-german-shopping-streets-empty_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This is not the most insightful analysis since the figures that we can see were to expected given the current Covid-19 crisis. However, I think by using data from &lt;em&gt;hystreet.com&lt;/em&gt; we can make a bit more evident how many people actually stayed away from the centres. I replicated the analysis for a couple of other cities of south west Germany – unsurprisingly, again, they all look pretty similar. If you continued up until this very end: Stay healthy – and please stay home (for now).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scraping Spiegel articles using {newsanchor}</title>
+      <link>https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/post/scraping-spiegel-articles-using-newsanchor/</guid>
+      <description>&lt;p&gt;Almost a year ago, we (a team at &lt;a href=&#34;www.correlaid.org&#34;&gt;CorrelAid&lt;/a&gt;) published our first open source package for R on CRAN: &lt;strong&gt;{newsanchor}&lt;/strong&gt;. It queries the API of &lt;a href=&#34;newsapi.org&#34;&gt;newsapi.org&lt;/a&gt; and allows you to easily download the articles relating to your search query of a range of popular international news outlets. Results include a variety of meta data, the URLs as well as (depending on whether you have a paid plan or not) parts of the article content. You can find all information needed reading its &lt;a href=&#34;https://cran.r-project.org/web/packages/newsanchor/vignettes/usage-newsanchor.html&#34;&gt;vignette&lt;/a&gt;. I also wrote an introductory blog post which you can find &lt;a href=&#34;https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One convenient use of &lt;strong&gt;{newsanchor}&lt;/strong&gt; is to use it to scrape the articles’ content. Our package is of great help because it provides you with the corresponding URLs. It is fairly easy to build a scraper upon that. &lt;em&gt;Here, I have to mention that vast parts of the following code stem from &lt;a href=&#34;https://github.com/jandix&#34;&gt;Jan Dix&lt;/a&gt; who, like me, co-authored the package.&lt;/em&gt; He wrote a scraper for the New York Times, it was originally to be included as a vignette of &lt;strong&gt;{newsanchor}&lt;/strong&gt; (it had to be removed because of dependecy trouble, though). What I did was to build on his code and add another example for the popular German news magazine &lt;a href=&#34;www.spiegel.de&#34;&gt;Spiegel&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[Note: There is code for a progress bar in the following chunk. It is commented out so the R-Markdown output would be easier to read]&lt;/em&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Load packages required
+library(newsanchor) # download newspaper articles
+library(robotstxt)  # get robots.txt
+library(httr)       # http requests
+suppressMessages(library(rvest))      # web scraping tools
+suppressMessages(library(dplyr))      # easy data frame manipulation
+library(stringr)    # string/character manipulation 
+
+# Get headlines published by SPON using newsanchor (example)
+response &amp;lt;- get_everything_all(query   = &amp;quot;Merkel&amp;quot;,
+                                 sources = &amp;quot;spiegel-online&amp;quot;,
+                                 from    = Sys.Date() - 3,
+                                 to      = Sys.Date())
+  
+# Extract response data frame
+articles &amp;lt;- response$results_df
+
+# Check robots.txt if scraping is OK
+suppressMessages(allowed &amp;lt;- paths_allowed(articles$url))
+all(allowed)
+
+# Define parsing function
+get_article_body &amp;lt;- function (url) {
+  
+  # Download article page
+  response &amp;lt;- GET(url)
+  
+  # Check if request was successful
+  if (response$status_code != 200) return(NA)
+  
+  # Extract HTML
+  html &amp;lt;- content(x        = response, 
+                  type     = &amp;quot;text&amp;quot;, 
+                  encoding = &amp;quot;UTF-8&amp;quot;)
+  
+  # Parse html
+  parsed_html &amp;lt;- read_html(html)                   
+  
+  # Define paragraph DOM selector
+  selector &amp;lt;- &amp;quot;div.clearfix p&amp;quot;
+  
+  # Parse content
+  parsed_html %&amp;gt;% 
+    html_nodes(selector) %&amp;gt;%      # extract all paragraphs within class &amp;#39;article-section&amp;#39;
+    html_text() %&amp;gt;%               # extract content of the &amp;lt;p&amp;gt; tags
+    str_replace_all(&amp;quot;\n&amp;quot;, &amp;quot;&amp;quot;) %&amp;gt;% # replace all line breaks
+    paste(collapse = &amp;quot; &amp;quot;)         # join all paragraphs into one string
+}
+
+# Apply function to all URLs
+# Create new text column
+articles$body &amp;lt;- NA
+
+# Initialize progress bar
+# pb &amp;lt;- txtProgressBar(min     = 1, 
+#                      max     = nrow(articles), 
+#                      initial = 1, 
+#                      style   = 3)
+
+# Loop through articles and apply function
+for (i in 1:nrow(articles)) {
+  
+  # Apply function to i in URLS
+  articles$body[i] &amp;lt;- get_article_body(articles$url[i])
+  
+  ## Update progress bar
+  # setTxtProgressBar(pb, i)
+  
+  # Sleep for 1 sec
+  Sys.sleep(1)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Based on the articles’ content, you can, for example, compute sentiment analyses. Jan shows you how to do that for the New York Times in what was formerly our vignette &lt;a href=&#34;https://github.com/CorrelAid/newsanchor/blob/master/examples/scrape-nyt.Rmd&#34;&gt;here&lt;/a&gt;. I hope this is useful for some of you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatically filling a SQLite database using AWS and RStudio Server</title>
+      <link>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/post/automatically-filling-sqlite-db-using-aws/</guid>
+      <description>&lt;p&gt;For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an &lt;a href=&#34;https://www.codefor.de/stuttgart/&#34;&gt;Open Data project&lt;/a&gt; and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. &lt;a href=&#34;www.stuttgarter-zeitung.de/feinstaub&#34;&gt;Here&lt;/a&gt; you could also find aggregated air quality data for all areas of Stuttgart. Recently, I began storing the data into a database myself to be able to do my own calculations (and eventually create a Shiny App that would display nicer, interactive graphs). Here, I wanted to &lt;em&gt;very quickly&lt;/em&gt; write down what I did and what is going on.&lt;/p&gt;
+&lt;div id=&#34;the-sensor&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;The sensor&lt;/h4&gt;
+&lt;p&gt;The sensor measuring fine dust is a very basic one. All its components cost around 30€ and can be shopped online. Honestly, I did not build the sensor myself; a colleague had a spare one and gave it to me. However, I was told it is not too hard to build such a sensor. In fact, &lt;a href=&#34;https://luftdaten.info/&#34;&gt;here&lt;/a&gt; you can find a (German only) manual for doing so, including a list of stuff you need for the sensor itself. My sensor is located on my balcony, which in turn faces a highly frequented road, where quite a lot of buses are passing by during the day. The sensor delivers the data it measures every (more or less) five minutes via a JSON file to an API that is open for everyone to read. The sensor itself runs quite smoothly, only recently I run into problems where it ceases to send information – this is fixed after quickly removing it from its power source.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;amazon-aws-with-rstudio-server&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Amazon AWS with RStudio Server&lt;/h4&gt;
+&lt;p&gt;When I came up with the idea of automatically storing the data into a database, I was initially thinking about setting up a Raspberry Pi to do the job. Yet, a friend recommended using Amazon AWS instead. Frankly, when I did this, I was new to cloud computing. However, there are a lot of tutorials out there on how to set up an Amazon AWS instance. I remember choosing the smallest one (EC2) which is also completely free of charge. That is useful since it is supposed to run 24/7. Whilst setting up the instance, I also installed RStudio Server and Shiny Server. That would later allow me to work on R scripts on the instance in order to do the parsing of the JSON file.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-script&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;The script&lt;/h4&gt;
+&lt;p&gt;The R script is nothing more than a simple parser for the JSON file that the API publishes. As a first step, I set up a SQLite database on my AWS instance using the R package &lt;code&gt;sqldf&lt;/code&gt;. It contains only three variables: the timestamp of the measurement and the two fine dust measurements that the sensor gives us. The script parses the JSON file (using &lt;code&gt;jsonlite&lt;/code&gt;) and writes it into the database using SQL. Here is some example code:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;db &amp;lt;- dbConnect(SQLite(), dbname = &amp;quot;/home/user/database.sqlite&amp;quot;)
+
+query1 &amp;lt;- paste0(&amp;quot;INSERT INTO database VALUES (&amp;#39;&amp;quot;, time1, &amp;quot;&amp;#39;,&amp;quot;, PM_10_1, &amp;quot;,&amp;quot;, PM_25_1, &amp;quot;)&amp;quot;)
+
+dbSendQuery(conn = db, query1)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;setting-up-the-crontab&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Setting up the Crontab&lt;/h4&gt;
+&lt;p&gt;The last step is to automate the R script that we have stored on the AWS instance, too. You can do this using a Crontab, which is an automation tool that is already present on the Linux of the EC2 instance. You can find a tutorial &lt;a href=&#34;https://www.howtogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-to-crontab-files/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the R {newsanchor} package</title>
+      <link>https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/</link>
+      <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/post/introducing-the-r-newsanchor-package/</guid>
+      <description>&lt;p&gt;&lt;em&gt;At CorrelAid, we developed a tool for communication scientists, journalists and data scientists alike:&lt;/em&gt; &lt;code&gt;{newsanchor}&lt;/code&gt;, &lt;em&gt;&lt;a href=&#34;correlaid.org&#34;&gt;CorrelAid&lt;/a&gt;’s first open source R package. It conveniently helps you to access breaking news and articles from over 30,000 news sources and blogs - using the API of newsapi.org. I have co-authored the package and I am thrilled to introduce the package here, too.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The (mostly free) News API is one way to access text as a resource for data analyses. It provides news articles and breaking news from a variety of sources across various countries, delivered to the analyst via an API (HTTP REST). Users are offered three API endpoints: top headlines, everything, and sources. Top headlines provides access to live breaking headlines of the news sources in a given country. Everything outputs articles published by these sources on a specified search query, even back in the past. Sources helps users to get access to the set of news sources that are available to top headlines.&lt;/p&gt;
+&lt;p&gt;All search requests come with different meta data (URL, author, date of publication, topic, etc.) and can be refined by a huge variety of additional parameters (sources, topic, time, relevance, etc.). For more details, see &lt;a href=&#34;newsapi.org&#34;&gt;newsapi.org&lt;/a&gt;. &lt;em&gt;Note for German scientists and journalists: In Germany, the following sources are available: Spiegel Online, Handelsblatt, Tagesspiegel, Wired, Gründerszene, BILD, Zeit Online, Focus Online, t3n and Wirtschaftswoche.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After a short registration, the API can be accessed via code: through client libraries such as JavaScript or Ruby. But until now, there has been no R package that does the work (or search) conveniently. Now, at CorrelAid, a team of five data analysts developed this package. The package is called &lt;code&gt;{newsanchor}&lt;/code&gt; and is available on CRAN: &lt;code&gt;install.packages(&#34;newsanchor&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Newsanchor provides three functions that correspond to the API’s endpoints: &lt;code&gt;get_headlines()&lt;/code&gt;, &lt;code&gt;get_everything()&lt;/code&gt; and &lt;code&gt;get_sources()&lt;/code&gt;. They help users to conveniently scrape the resources of News API, specify different search parameters and obtain results as 1) a data frame with results and 2) a list with meta data on the search. We also provide comprehensive error messages to make troubleshooting easy. You find details on the usage of newsanchor and its core functions in our general CRAN vignette.&lt;/p&gt;
+&lt;p&gt;Another reason for us to develop the package was that analyses based on words are becoming increasingly important. Political scientists, for example, classify parties on any ideological dimension using party manifestos. Other scholars focus on news articles to extract the (political) framings of the texts. Using automatisation, it is, for example, possible to calculate the sentiment of a given text fragment such as, for instance, online commentaries. The resulting data prove useful both as a dependent variable as well as an independent variable of any further analysis.&lt;/p&gt;
+&lt;p&gt;The importance of text analyses arises from the origin of ‘texts’: People aim at a certain reaction of their readers. Among the producers of texts with most influence are the media: newspapers, online magazines or blogs. By publishing articles, opinion pieces and analyses, they shape public opinion. The topics they choose (or not choose), the words they use, the quantity of articles on a certain issue – all these factors make them a worthy basis of investigation.&lt;/p&gt;
+&lt;p&gt;As already mentioned, an example would be to calculate the sentiment of news articles. Newsanchor can help to filter and scrape texts from news sources. In our &lt;a href=&#34;https://github.com/CorrelAid/newsanchor/blob/master/examples/scrape-nyt.R&#34;&gt;example code&lt;/a&gt;, our co-developer Jan Dix shows you how to do so by getting URLs of the New York Times with &lt;code&gt;newsanchor::get_everything()&lt;/code&gt;, subsequently scraping them with &lt;code&gt;{httr}&lt;/code&gt; and analysing the articles’ sentiments.&lt;/p&gt;
+&lt;p&gt;We hope &lt;code&gt;{newsanchor}&lt;/code&gt; will help scientists, journalists and other data enthusiasts to start scraping and using text data based on news articles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Voting Behaviour in the 2014 Scottish Independence Referendum</title>
+      <link>https://yannikbuhl.netlify.com/post/voting-behaviour-in-2014-scottish-independence-referendum/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/post/voting-behaviour-in-2014-scottish-independence-referendum/</guid>
+      <description>&lt;p&gt;For my Master’s thesis, submitted in July 2017, I investigated the voting behaviour of the Scottish electorate in the 2014 Scottish independence referendum. More precisely, I was the first attempting to explain voting behaviour in the referendum based on a multivariate quantitative approach. In doing so, I additionally focused on Scots’ attitudes towards the European Union and how these attitudes influence(d) their behaviour at the ballots. Whilst the existing literature on the referendum mostly ignored the European dimension of the independence debate, my results suggest that the Scots did in fact somehow think about the future of Scotland within or outside of the EU when the cast their vote – and that these attitudes did have an effect on how they would decide.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In sum, my results are the following &lt;/em&gt;(ceteris paribus)&lt;em&gt;: Scots who found EU membership to be a good thing and who thought that an independent Scotland would not be able to remain in the EU had a comparatively low probability of voting in favour of independence. However, once they believed that independent Scotland would be able to remain an EU member, the probability of voting in favour of independence increased sharply. These effects (based on logistic regression controlling for all sorts of variables and attitudes such as age, gender, nationalism, party identificiation, etc.) become more easy to understand once they are presented in a graph using predicted probabilities (higher values of “Perceived Likelihood of Scotland retaining EU membership” mark higher confidence of the survey respondent):&lt;/em&gt;
+&lt;img src=&#34;https://yannikbuhl.netlify.com/img/finalplot_.jpg&#34; alt=&#34;Predicted Probabilities I: How EU membership influenced voting behaviour.&#34; /&gt;
+&lt;em&gt;This relationship gets even more pronounced after computing an interaction effect and separating between proponents and opponents of EU membership:&lt;/em&gt;
+&lt;img src=&#34;https://yannikbuhl.netlify.com/img/finalplot2_.jpg&#34; alt=&#34;Predicted Probabilities II: The differences between EU proponents and EU opponents.&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This blog post was just meant to be as short presentation of my results. &lt;a href=&#34;Thesis_Yannik_Buhl.pdf&#34;&gt;Here&lt;/a&gt; you can download the PDF with the full thesis.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Impressum/Datenschutz</title>
-      <link>/privacy/</link>
+      <link>https://yannikbuhl.netlify.com/privacy/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;!-- raw HTML omitted --&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
-&lt;p&gt;Yannik Buhl &lt;!-- raw HTML omitted --&gt;
-Welfenstraße 50 &lt;!-- raw HTML omitted --&gt;
-70599 Stuttgart&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;externe-bilder--logos&#34;&gt;Externe Bilder &amp;amp; Logos&lt;/h1&gt;
-&lt;p&gt;Icons made by &lt;a href=&#34;http://www.freepik.com&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;https://www.flaticon.com/&#34;&gt;Flaticon&lt;/a&gt; are licensed by &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34;&gt;CC 3.0 BY&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;datenschutz--dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
-&lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://yannikbuhl.netlify.com/privacy/</guid>
+      <description>
+
+&lt;p&gt;Angaben gemäß § 5 TMG &amp;amp; &lt;br /&gt; verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/p&gt;
+
+&lt;p&gt;Yannik Buhl &lt;br /&gt;
+Blumenstraße 44 &lt;br /&gt;
+70182 Stuttgart&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;mailto:buhl-netlify@posteo.de&#34; target=&#34;_blank&#34;&gt;Kontakt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;externe-bilder-logos&#34;&gt;Externe Bilder &amp;amp; Logos&lt;/h1&gt;
+
+&lt;p&gt;Icons made by &lt;a href=&#34;http://www.freepik.com&#34; target=&#34;_blank&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;https://www.flaticon.com/&#34; target=&#34;_blank&#34;&gt;Flaticon&lt;/a&gt; are licensed by &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34; target=&#34;_blank&#34;&gt;CC 3.0 BY&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;datenschutz-dsgvo&#34;&gt;Datenschutz / DSGVO&lt;/h1&gt;
+
+&lt;p&gt;Beim Besuch dieser Homepage werden von mir keine personenbezogen Daten verarbeitet oder gespeichert. Diese Homepage wird gehosted bei &lt;a href=&#34;www.netlify.com&#34; target=&#34;_blank&#34;&gt;Netlify&lt;/a&gt;. Netlify speichert nach eigenen Angaben lediglich die IP-Adressen der Seitenbesucher für nicht mehr als 30 Tage. Mehr Informationen gibt es &lt;a href=&#34;https://www.netlify.com/gdpr/&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h2 id=&#34;twitter&#34;&gt;Twitter&lt;/h2&gt;
-&lt;p&gt;Auf den Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter &lt;a href=&#34;https://twitter.com/privacy&#34;&gt;https://twitter.com/privacy&lt;/a&gt;. Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: &lt;a href=&#34;https://twitter.com/account/settings&#34;&gt;https://twitter.com/account/settings&lt;/a&gt; ändern.&lt;/p&gt;
+
+&lt;p&gt;Auf den Seiten sind Funktionen des Dienstes Twitter eingebunden. Diese Funktionen werden angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Durch das Benutzen von Twitter und der Funktion „Re-Tweet“ werden die von Ihnen besuchten Webseiten mit Ihrem Twitter-Account verknüpft und anderen Nutzern bekannt gegeben. Dabei werden auch Daten an Twitter übertragen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter &lt;a href=&#34;https://twitter.com/privacy&#34; target=&#34;_blank&#34;&gt;https://twitter.com/privacy&lt;/a&gt;. Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter: &lt;a href=&#34;https://twitter.com/account/settings&#34; target=&#34;_blank&#34;&gt;https://twitter.com/account/settings&lt;/a&gt; ändern.&lt;/p&gt;
+
 &lt;h2 id=&#34;youtube&#34;&gt;YouTube&lt;/h2&gt;
-&lt;p&gt;Die Webseite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine der mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: &lt;a href=&#34;https://www.google.de/intl/de/policies/privacy&#34;&gt;https://www.google.de/intl/de/policies/privacy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Webseite nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine der mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem Youtube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind ermöglichen Sie YouTube, Ihr Surfverhalten Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen. Weitere Informationen zum Umgang von Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: &lt;a href=&#34;https://www.google.de/intl/de/policies/privacy&#34; target=&#34;_blank&#34;&gt;https://www.google.de/intl/de/policies/privacy&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;ssl-verschlüsselung&#34;&gt;SSL-Verschlüsselung&lt;/h2&gt;
+
 &lt;p&gt;Diese Seite nutzt zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die SSL Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.&lt;/p&gt;
+
 &lt;h2 id=&#34;recht-auf-auskunft-löschung-sperrung&#34;&gt;Recht auf Auskunft, Löschung, Sperrung&lt;/h2&gt;
+
 &lt;p&gt;Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse melden.&lt;/p&gt;
+
 &lt;h1 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h1&gt;
+
 &lt;h2 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;
+
 &lt;p&gt;Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;
+
 &lt;h2 id=&#34;haftung-für-links&#34;&gt;Haftung für Links&lt;/h2&gt;
+
 &lt;p&gt;Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.&lt;/p&gt;
+
 &lt;h2 id=&#34;urheberrecht&#34;&gt;Urheberrecht&lt;/h2&gt;
+
 &lt;p&gt;Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.&lt;/p&gt;
+
 &lt;h2 id=&#34;datenschutz&#34;&gt;Datenschutz&lt;/h2&gt;
-&lt;p&gt;Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. 
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. 
+
+&lt;p&gt;Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.&lt;/p&gt;
+
 &lt;h2 id=&#34;google-analytics-derzeit-inaktiv-auf-dieser-seite&#34;&gt;Google Analytics &lt;strong&gt;(derzeit inaktiv auf dieser Seite)&lt;/strong&gt;&lt;/h2&gt;
+
 &lt;p&gt;Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&amp;ldquo;Google&amp;rdquo;). Google Analytics verwendet sog. &amp;ldquo;Cookies&amp;rdquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.&lt;/p&gt;
-&lt;p&gt;Impressum erstellt mithilfe des &lt;a href=&#34;https://www.impressum-generator.de&#34;&gt;Impressum Generators&lt;/a&gt; der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht&lt;/p&gt;
+
+&lt;p&gt;Impressum erstellt mithilfe des &lt;a href=&#34;https://www.impressum-generator.de&#34; target=&#34;_blank&#34;&gt;Impressum Generators&lt;/a&gt; der Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Überblick</title>
-      <link>/tutorial/</link>
+      <title>Ecuador</title>
+      <link>https://yannikbuhl.netlify.com/tutorial/ecuador/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/tutorial/ecuador/</guid>
+      <description>&lt;p&gt;Im August 2014 bin ich am Frankfurter Flughafen ins Flugzeug gestiegen und nach &lt;em&gt;Quito&lt;/em&gt;, Ecuador auf 2950 Metern über dem Meeresspiegel geflogen. Dort habe ich für einige Monate im Büro der dortigen &lt;a href=&#34;www-fes-ildis.ec/&#34; target=&#34;_blank&#34;&gt;Friedrich-Ebert-Stiftung&lt;/a&gt; zu arbeiten. Während meiner Zeit dort habe ich ein wundervolles Land gesehen, ich habe die &lt;em&gt;Galápagos&lt;/em&gt;-Inseln besucht und die &lt;em&gt;Nebelwälder&lt;/em&gt; am Rande des Amazonas. Außerdem habe ich Ausflüge nach &lt;em&gt;Machu Picchu&lt;/em&gt;, Peru unternommen und auf dem Rückweg zwei Wochen lang Kubas Westen bereist. Die folgenden Bilder sind eine Auswahl derer, die dort (dortmals noch mit meiner Canon 500D) entstanden sind.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Auf dem Weg nach Santa Cruz&#34; href=&#34;https://yannikbuhl.netlify.com/img/gala1.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/gala1.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Die Lava-Felder der Isla Isabela&#34; href=&#34;https://yannikbuhl.netlify.com/img/gala2.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/gala2.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Blaufußtölpel vor der Küste von Isla Isabela&#34; href=&#34;https://yannikbuhl.netlify.com/img/gala3.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/gala3.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Blick vom Panecillo auf Quito&#34; href=&#34;https://yannikbuhl.netlify.com/img/ec1.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/ec1.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;In den Nebelwäldern&#34; href=&#34;https://yannikbuhl.netlify.com/img/ec2.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/ec2.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Molinuco nahe Quito&#34; href=&#34;https://yannikbuhl.netlify.com/img/ec3.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/ec3.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schwarzwald</title>
+      <link>https://yannikbuhl.netlify.com/tutorial/schwarzwald/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
       
-      <guid>/tutorial/</guid>
-      <description>&lt;p&gt;Auf den Unterseiten zu dieser Seite finden Sie eine Auswahl meiner Fotografien, geschossen auf verschiedenen Reisen in den vergangenen Jahren. Eine besondere Vorliebe hege ich für Landschafts- bzw. Outdoor-Fotografie. Seit Jahren bin ich leidenschaftlicher &lt;em&gt;Canon&lt;/em&gt;-Fan und nutze für meine Fotos eine &lt;em&gt;Canon 70D&lt;/em&gt;. Am häufigsten hängt daran mein liebstes Weitwinkelobjektiv (&lt;em&gt;Sigma 10-20 mm f/4-5.6&lt;/em&gt;) inklusive Pol- bzw. Neutraldichtefilter. Das Ganze steht in der Regel auf einem Carbon-Stativ mit Kugelkopf.&lt;/p&gt;
+      <guid>https://yannikbuhl.netlify.com/tutorial/schwarzwald/</guid>
+      <description>&lt;p&gt;Im Herbst 2017 bin ich mit einem &lt;a href=&#34;https://www.instagram.com/chris_de_berghie/&#34; target=&#34;_blank&#34;&gt;Freund&lt;/a&gt; von mir in den Schwarzwald gefahren. Unser Ziel war es, so viel wie möglich von der wunderbaren Landschaft dieses Fleckchen Erdes in Baden-Württemberg zu fotografieren. Unsere Route führte uns am Ende in etwas weniger als einer Woche vom Nordschwarzwald (Hornisgrinde) bis in den Süden (Feldberg/Titisee). Auf dem Weg haben wir vor allem viele Wasserfälle besucht und mit unseren Neutraldichtefiltern experimentiert. Die Zahl an Wasserfällen war schier endlos: Triberger Wasserfälle, Zweribachwasserfälle, Burgbachwasserfall, Wasserfälle Allerheiligen&amp;hellip; Die folgenden Bilder sind alle auf dieser Reise entstanden.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;https://yannikbuhl.netlify.com/img/sw1.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/sw1.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;https://yannikbuhl.netlify.com/img/sw2.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/sw2.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;https://yannikbuhl.netlify.com/img/sw3.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/sw3.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;https://yannikbuhl.netlify.com/img/sw4.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/sw4.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Schwarzwald&#34; href=&#34;https://yannikbuhl.netlify.com/img/sw5.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://yannikbuhl.netlify.com/img/sw5.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>/post/</link>
+      <title>Example Talk</title>
+      <link>https://yannikbuhl.netlify.com/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
-      <guid>/post/</guid>
-      <description></description>
+      <guid>https://yannikbuhl.netlify.com/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>/publication/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
-      
-      <guid>/publication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>/talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/project/</link>
+      <title>Deep Learning</title>
+      <link>https://yannikbuhl.netlify.com/project/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/project/</guid>
+      <guid>https://yannikbuhl.netlify.com/project/deep-learning/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>https://yannikbuhl.netlify.com/project/example-external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/project/example-external-project/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>A Person Re-Identification System For Mobile Devices</title>
+      <link>https://yannikbuhl.netlify.com/publication/person-re-identification/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/publication/person-re-identification/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mobile visual clothing search</title>
+      <link>https://yannikbuhl.netlify.com/publication/clothing-search/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate>
+      
+      <guid>https://yannikbuhl.netlify.com/publication/clothing-search/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>/slides/</link>
+      <link>https://yannikbuhl.netlify.com/slides/example-slides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides/</guid>
-      <description></description>
+      <guid>https://yannikbuhl.netlify.com/slides/example-slides/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
