@@ -1,0 +1,170 @@
+---
+title: "Automated Reporting on Lacking Rainfall in Germany"
+author: "Yannik"
+date: '2021-06-12'
+slug: []
+categories: R
+tags:
+- english
+- R
+authors: []
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Climate change causes severe disturbances in what we used to call a more or less stable climate. Germany, just as many other countries around the globe, suffers from an increasing lack of rainfall, which in turn causes situations close to what is called a draught. Data journalists are, thus, increasingly focusing on quantifying the effects of the climate crisis. When I used to work as an Editor at <a href="www.stuttgarter-zeitung.de">Stuttgarter Zeitung</a>, I contributed to this journalistic goal by writing and automating a script that would help us tell the readers which region of Baden-Württemberg, Germany, has suffered from the longest absence of rainfall.</p>
+<p>It is a more or less easy way of automating reports on the climate’s effects on our weather. In the following, I demonstrate how my script looks like. The data come from the German National Weather Service (<em>DWD, Deutscher Wetterdienst</em>).</p>
+<p>First, what you need is a bunch of packages:</p>
+<pre class="r"><code>library(pacman)
+pacman::p_load(rdwd, magrittr, dplyr, here, bit64, lubridate, readxl, purrr, backports, remotes)</code></pre>
+<pre class="r"><code>remotes::install_github(&quot;munichrocker/DatawRappr&quot;)
+library(DatawRappr)</code></pre>
+<p>Second, you need a list of all the DWD stations (including their IDs) that provide the desired measures (in this case, amount of rainfall, but this could also be temperature, etc.):</p>
+<pre class="r"><code># Get stations
+stationen &lt;- readxl::read_excel(here::here(&quot;content/post/stationen_bw.xlsx&quot;))
+head(stationen)</code></pre>
+<pre><code>## # A tibble: 6 x 6
+##   stations_id stationshoehe stationsname       lufttemperatur  wind niederschlag
+##         &lt;dbl&gt;         &lt;dbl&gt; &lt;chr&gt;                       &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;
+## 1          11           680 Donaueschingen La~              0     1            0
+## 2        1013           309 Dogern                          0     1            0
+## 3        1346          1490 Feldberg/Schwarzw~              0     1            0
+## 4        1443           237 Freiburg                        0     1            0
+## 5        1468           797 Freudenstadt                    0     1            0
+## 6        1490           394 Friedrichshafen                 0     1            0</code></pre>
+<p>For an analysis on rainfall, we need to extract those stations that measure it:</p>
+<pre class="r"><code># Get all stations
+niederschlag &lt;- stationen$stations_id[stationen$niederschlag == 1]</code></pre>
+<p>In case you want to automate this script, create a folder where you want to store the data that the {rdwd} package downloads (this example stems from my Raspberry Pi where the script is automated and the folder is created using the RAM to avoid using the memory disk):</p>
+<pre class="r"><code># Check if folder for zip data exists &amp; create it if necessary
+if (dir.exists(&quot;/run/user/1000/wetter&quot;) == FALSE) {dir.create(&quot;/run/user/1000/wetter&quot;)}</code></pre>
+<p>After these initial steps, we can start to download and process recent rainfall data from all stations involved. I download the data on a daily resolution first. Doing so, we can simply count the days since the last rainfall:</p>
+<pre class="r"><code># Get URLs for DWD zip files
+download &lt;- rdwd::selectDWD(id = niederschlag, 
+                            res = &quot;daily&quot;, 
+                            outvec = TRUE, 
+                            var = &quot;more_precip&quot;, 
+                            per = &quot;recent&quot;)
+
+# Download actual zip files and extract data as lists
+res1 &lt;- rdwd::dataDWD(url = download, 
+                      dir = &quot;/run/user/1000/wetter&quot;, 
+                      force = TRUE, 
+                      quiet = TRUE, 
+                      overwrite = TRUE)</code></pre>
+<pre><code>## Reading 58 files with readDWD.data() and fread=TRUE ...</code></pre>
+<pre class="r"><code># Create general data frame from all lists
+res1 %&gt;% purrr::map_dfr(as.data.frame) -&gt; res2
+res2 %&gt;% filter(MESS_DATUM &gt; as.POSIXct(&quot;2020-01-01&quot;)) -&gt; res2
+
+# Process and find last day of niederschlag
+results &lt;- res2 %&gt;% group_by(STATIONS_ID) %&gt;% 
+  mutate(MESS_DATUM = as.POSIXct(MESS_DATUM)) %&gt;% 
+  filter(RS &gt; 0) %&gt;% 
+  summarise(niederschlag = last(RS), time = last(MESS_DATUM)) %&gt;% 
+  mutate(days = as.integer(Sys.Date() - as.Date(time))) %&gt;% 
+  arrange(desc(days)) %&gt;% 
+  rename(stations_id = STATIONS_ID) %&gt;% 
+  mutate(time = format(time, format = &quot;%d.%m.%Y&quot;))
+
+# Check if folder with zip files exists and delete if present
+if (dir.exists(&quot;/run/user/1000/wetter&quot;) == TRUE) {
+      unlink(&quot;/run/user/1000/wetter&quot;, recursive = TRUE)
+}</code></pre>
+<p>What is necessary now is to check whether there has been rainfall on this present day. If so, we have to set the counter of days without rain to 0:</p>
+<pre class="r"><code>recent1 &lt;- rdwd::selectDWD(id = niederschlag, 
+                           res = &quot;10_minutes&quot;, 
+                           outvec = TRUE, 
+                           var = &quot;precipitation&quot;, 
+                           per = &quot;now&quot;)
+
+if (dir.exists(&quot;/run/user/1000/wetter&quot;) == FALSE) {dir.create(&quot;/run/user/1000/wetter&quot;)}
+
+# Download actual zip files and extract data as lists
+recent2 &lt;- rdwd::dataDWD(url = recent1, 
+                         dir = &quot;/run/user/1000/wetter&quot;, 
+                         force = TRUE, 
+                         quiet = TRUE, 
+                         overwrite = TRUE)</code></pre>
+<pre><code>## Reading 58 files with readDWD.data() and fread=TRUE ...</code></pre>
+<pre class="r"><code># Create general data frame from all lists
+recent2 %&gt;% purrr::map_dfr(as.data.frame) -&gt; recent3
+
+# Delete unused columns and delete all data before yesterday to prevent errors
+recent3 %&gt;% filter(MESS_DATUM &gt; Sys.Date() - 1) %&gt;% 
+  dplyr::select(STATIONS_ID, MESS_DATUM, RWS_10) -&gt; recent3</code></pre>
+<pre><code>## Warning in base::check_tzones(e1, e2): &#39;tzone&#39; Attribute sind inkonsistent</code></pre>
+<pre class="r"><code># Wrangle data frame with weather data to get last value
+plausible &lt;- recent3 %&gt;% group_by(STATIONS_ID) %&gt;% 
+  summarise(sum = sum(RWS_10)) %&gt;% 
+  filter(sum &gt; 0)
+
+if (sum(results$stations_id %in% plausible$STATIONS_ID) != 0) {
+  
+  for (i in seq_along(plausible$STATIONS_ID)) {
+    
+    id &lt;- plausible$STATIONS_ID[i]
+    
+    results$time[results$stations_id == id] &lt;- format(Sys.Date(), format = &quot;%d.%m.%Y&quot;)
+    results$days[results$stations_id == id] &lt;- 0
+    results$niederschlag[results$stations_id == id] &lt;- plausible$sum[plausible$STATIONS_ID == id]
+    
+    rm(id)
+    
+  }
+  
+}
+
+results &lt;- results %&gt;% arrange(desc(days))
+results_regen &lt;- results %&gt;% arrange(desc(niederschlag))</code></pre>
+<p>What is left now is to create the final data set:</p>
+<pre class="r"><code># Get names and station information
+stationen2 &lt;- stationen %&gt;% filter(niederschlag == 1) %&gt;% select(-lufttemperatur, -niederschlag, -wind)
+
+# Join weather dataset with stations dataset to get stations&#39; names
+results2 &lt;- inner_join(results, stationen2, by = &quot;stations_id&quot;) %&gt;% 
+  select(stationsname, days, niederschlag, time, stationshoehe) %&gt;% 
+  mutate(days = paste(days, &quot;Tag/en&quot;)) %&gt;% 
+  rename(Station = stationsname, 
+         `Letzter Niederschlag vor` = days,
+         `Niederschlag (in Litern)` = niederschlag,
+         `Letzter Niederschlag` = time,
+         `Stationshöhe (Meter)` = stationshoehe)
+
+if (dir.exists(&quot;/run/user/1000/wetter&quot;) == TRUE) {
+  unlink(&quot;/run/user/1000/wetter&quot;, recursive = TRUE)
+}</code></pre>
+<p>The result looks like this:</p>
+<pre class="r"><code>head(results2)</code></pre>
+<pre><code>## # A tibble: 6 x 5
+##   Station  `Letzter Nieders~ `Niederschlag (i~ `Letzter Nieder~ `Stationshöhe (~
+##   &lt;chr&gt;    &lt;chr&gt;                         &lt;dbl&gt; &lt;chr&gt;                       &lt;dbl&gt;
+## 1 Dietenh~ 5 Tag/en                        4   07.06.2021                    514
+## 2 Ihringen 4 Tag/en                       13.9 08.06.2021                    193
+## 3 Konstanz 4 Tag/en                       20.7 08.06.2021                    443
+## 4 Stuttga~ 4 Tag/en                        0.7 08.06.2021                    314
+## 5 Aulendo~ 4 Tag/en                        0.8 08.06.2021                    566
+## 6 Baden-B~ 3 Tag/en                        2.1 09.06.2021                    240</code></pre>
+<p>As a data journalist, I sent these data to a <a href="https://developer.datawrapper.de/docs">Datawrapper</a> chart (which is essentially a table) that displays all weather stations involved, the days since the last rainfall and the amount of rainfall the last time it rained:</p>
+<pre class="r"><code># Capture output which tells the URL of the chart
+capture.output(dw_data_to_chart(x = results2, chart_id = &quot;abcdef&quot;), file = &quot;/dev/null&quot;)
+
+## Send data to datawrapper
+log &lt;- capture.output(dw_publish_chart(chart_id = &quot;abcdef&quot;))</code></pre>
+<p>On a side note, my R script triggers a python script on my Raspberry Pi if an error occurred and no valid URL was put out; the script will send an E-mail notifying me of the error:</p>
+<pre class="r"><code># If there was no valid URL in the output, trigger python script.
+if (grepl(pattern = &quot;https://datawrapper.dwcdn.net/lxpOi&quot;, log[6]) == FALSE) {
+
+    system(&quot;python3 ~Documents/scripts/duerre.py&quot;)
+
+} else {
+
+    print(paste0(log[6], &quot; //// &quot;, Sys.time()))
+
+}</code></pre>
+<p>This whole script runs on my Raspberry Pi 3 using a Cronjob.</p>

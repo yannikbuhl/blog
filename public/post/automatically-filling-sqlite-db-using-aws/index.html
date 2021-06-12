@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 2.4.0">
-  <meta name="generator" content="Hugo 0.48" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta name="author" content="Yannik Buhl">
 
   
@@ -304,7 +304,10 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an <a href="https://www.codefor.de/stuttgart/">Open Data project</a> and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. <a href="www.stuttgarter-zeitung.de/feinstaub">Here</a> you could also find aggregated air quality data for all areas of Stuttgart. Recently, I began storing the data into a database myself to be able to do my own calculations (and eventually create a Shiny App that would display nicer, interactive graphs). Here, I wanted to <em>very quickly</em> write down what I did and what is going on.</p>
+      
+
+
+<p>For about two years now, I measure the air quality (more specifically: fine dust) on my balcony. Up to now, the data were stored by an <a href="https://www.codefor.de/stuttgart/">Open Data project</a> and displayed (more or less hidden) in the internet – at least you would need to know the name or ID of the sensor to access the data as very basic graphs. <a href="www.stuttgarter-zeitung.de/feinstaub">Here</a> you could also find aggregated air quality data for all areas of Stuttgart. Recently, I began storing the data into a database myself to be able to do my own calculations (and eventually create a Shiny App that would display nicer, interactive graphs). Here, I wanted to <em>very quickly</em> write down what I did and what is going on.</p>
 <div id="the-sensor" class="section level4">
 <h4>The sensor</h4>
 <p>The sensor measuring fine dust is a very basic one. All its components cost around 30€ and can be shopped online. Honestly, I did not build the sensor myself; a colleague had a spare one and gave it to me. However, I was told it is not too hard to build such a sensor. In fact, <a href="https://luftdaten.info/">here</a> you can find a (German only) manual for doing so, including a list of stuff you need for the sensor itself. My sensor is located on my balcony, which in turn faces a highly frequented road, where quite a lot of buses are passing by during the day. The sensor delivers the data it measures every (more or less) five minutes via a JSON file to an API that is open for everyone to read. The sensor itself runs quite smoothly, only recently I run into problems where it ceases to send information – this is fixed after quickly removing it from its power source.</p>
@@ -373,7 +376,7 @@ dbSendQuery(conn = db, query1)</code></pre>
   
 
   <p class="powered-by">
-    &copy; 2018 &middot; 
+    © 2018 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
